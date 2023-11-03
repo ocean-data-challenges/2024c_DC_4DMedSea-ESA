@@ -6,7 +6,7 @@
   <img src="figures/dc_2023_ose_global_banner.jpg" alt="Alt Text" width="900"/>
 </p>
 
-# SSH Mapping Data Challenge 2023a
+# 2024c - DC  4DMedSea  ESA
 
 This repository contains codes and sample notebooks for downloading and processing the 2023a SSH mapping data challenge.
 Note that this data challenge is a somewhat extended version of the data challenge [2021a_SSH_mapping_OSE](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE) on a global scale.

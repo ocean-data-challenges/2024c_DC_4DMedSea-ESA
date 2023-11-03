@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-
-ODC - global OSE mapping
-=================================================
+===========================
+4DMedSea-ESA Data Challenge
+===========================
 
 .. role:: raw-html(raw)
     :format: html
