@@ -1,4 +1,4 @@
-name: env-dc-global-ose1
+name: env-dc-4dmedsea-esa
 channels:
   - pyviz
 dependencies:

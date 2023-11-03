@@ -22,7 +22,7 @@ autodoc_mock_imports = ['numpy','xarray','matplotlib','pyinterp','netCDF4','scip
 
 # -- Project information -----------------------------------------------------
 
-project = 'ODC - global OSE mapping'
+project = '2024c_DC_4DMedSea-ESA'
 copyright = '2023, Datlas'
 author = 'Sammy Metref'
 
