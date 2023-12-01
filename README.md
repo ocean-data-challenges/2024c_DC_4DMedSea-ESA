@@ -3,53 +3,52 @@
 # Check out the data challenge [website](https://2023a-ssh-mapping-ose.readthedocs.io) for more infos !
 
 <p align="center">
-  <img src="figures/dc_2023_ose_global_banner.jpg" alt="Alt Text" width="900"/>
+  <img src="figures/dc_2024_4dmedsea_banner.jpg" alt="Alt Text" width="900"/>
 </p>
 
 # 2024c - DC  4DMedSea  ESA
 
-This repository contains codes and sample notebooks for downloading and processing the 2023a SSH mapping data challenge.
-Note that this data challenge is a somewhat extended version of the data challenge [2021a_SSH_mapping_OSE](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE) on a global scale.
+This repository contains codes and sample notebooks for downloading and processing the 2024c 4DMedSea mapping data challenge.
+Note that this data challenge is a somewhat extended version of the data challenge [2021a_SSH_mapping_OSE](https://github.com/ocean-data-challenges/2021a_SSH_mapping_OSE) in the Mediterranean Sea.
 
 So far, the github page visits amount to: 
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Focean-data-challenges%2F2023a_SSH_mapping_OSE&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PAGE+VIEWS&edge_flat=false)](https://hits.seeyoufarm.com)
 
-# 1. Context & Motivation
+## The 4DMedSea project
 
-The Copernicus Marine Service (CMEMS) is committed to providing high-quality, state-of-the-art ocean products through the validation and verification of physical oceanic parameters on both global and regional scales. Among the variables distributed by the service, ocean surface topography and surface currents are of great interest to the oceanographic communities for practical applications and for scientific research.
-
-Several mapping techniques, such as statistical interpolation methods or ocean model assimilation methods, are currently proposed to provide operational maps of ocean surface heights and currents. New mapping techniques (e.g. data-driven methods) are emerging and being tested in a research and development context. 
-It is therefore becoming important to inform users and developers about the accuracy of scale represented by each mapping system.
-
+This ITT is part of the ESA Mediterranean Regional Initiative aimed at exploring and exploiting the huge synergistic opportunities offered by the increasing EO European satellite capacity together with in-situ observations, advanced models and novel technologies (AI, ICTs, cloud computing capacity, HPCs) to enhance observations over the Mediterranean region, advance the scientific understanding of the role of the Mediterranean area in the Earth and climate system and transfer that knowledge into new solutions for society.In addition, this activity makes part of the ESA Ocean Science Cluster and contributes to the joint EC-ESA Earth System Science Initiative launched in February 2020 by the European Space Agency and the European Commission (EC) Directorate-General for Research and Innovation (DG RTD) to jointly advance Earth System Science and its response to the global challenges that society is facing in the onset of this century. In particular, this activity is a contribution to the EC-ESA Flagship Action on Ocean Health aimed at developing advanced ocean observations and products and enhancing the scientific understanding of the ocean's role in the Earth and climate system and its responses to management actions to contribute to reverse the cycle of decline in ocean health and improve conditions for sustainable development of the Ocean. 
 
 <p align="center">
-  <img src="figures/dc_2023_ose_global_duacs_sla_map.jpg" alt="Alt Text" width="800"/>
+  <img src="_static/DC_4DMedSea_IllustrationMap.png" alt="Alt Text" width="800"/>
 </p>
  
 
-The goal of the present data-challenge is to investigate how to best reconstruct sequences of Sea Surface Height (SSH) and surface current maps from partial satellite altimetry observations and from a global perspective. This data challenge follows an _Observation System Experiment_ framework: Satellite observations are from real sea surface height data from altimeter. The practical goal of the challenge is to investigate the best mapping method according to scores described below and in Jupyter notebooks.
+In that context, the overarching objectives of the 4DMED ITT are to exploit the synergy offered by the increasing EO European satellites together with in-situ observations, advanced physical/biogeochemical/ecological models and novel technologies to develop a data-driven, 4D reconstruction of the Mediterranean Sea physical and biogeochemical state, exploit this information to further improve our understanding of the complex interactions between physical and biological processes at a broad range of temporal and spatial scales and explore options to transfer that knowledge into new solutions for society regarding the monitoring, restoration and preservation of the Mediterranean Sea Health.
 
+## The Data Challenge Setup
+
+ 
 ### Observations
 
-The SSH observations used in this study comprise data from a nadir altimeter constellation that includes Jason 3, Sentinel 3A, Sentinel 3B, Haiyang-2A, Haiyang-2B, and Cryosat-2. These data are distributed by the Copernicus Marine Service [(https://doi.org/10.48670/moi-00146)](https://doi.org/10.48670/moi-00146) and cover the period from January 1st, 2019 to December 31st, 2019. The Saral/AltiKa altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.
+The SSH observations used in this study comprise data from a nadir altimeter constellation that includes Saral/Altika (alg), Jason-2 (j2, j2g, j2n), Jason-3 (j3, j3n), Sentinel-3A (s3a), Sentinel-3B (s3b), Sentinel-6 (s6), Haiyang-2B (h2b), and Cryosat-2 (c2, c2n). These data are distributed by the Copernicus Marine Service [https://doi.org/10.48670/moi-00146](https://doi.org/10.48670/moi-00146) and cover the period from January 1st, 2017 to December 31st, 2017. The Haiyang-2A (H2A) altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.
 
-In addition, independent assessment of ocean surface currents is performed using in situ data, which are also distributed by CMEMS [(https://doi.org/10.17882/86236)]( https://doi.org/10.17882/86236).
+In addition, independent assessment of ocean surface currents is performed using in situ data, which are also distributed by CMEMS [https://doi.org/10.17882/86236]( https://doi.org/10.17882/86236).
 
 
-### Data sequence and use
- 
-The SSH reconstructions are assessed at global scale and over the period from 2019-01-01 to 2019-12-31.
+### Data sequence and use 
+
+The SSH reconstructions are assessed in the Mediterranean basin and over the period from 2017-01-01 to 2017-12-31.
 
 For reconstruction methods that need a spin-up, the **observations** from other period can be used.
 
-The altimeter data from Saral/AltiKa and surface current velocity data mentioned above should never be used so that any reconstruction can be considered uncorrelated to the evaluation period.
+The altimeter data from the Haiyang-2A (H2A) altimeter and surface current velocity data mentioned above should never be used so that all reconstructions can be considered uncorrelated to the evaluation period.
 
 
-# 2. Get started
+## Get started
 
 
-## Installation
+### Installation
 :computer: _**How to get started ?**_
 
 Clone the data challenge repo: 
@@ -79,29 +78,31 @@ finally, select the "env-dc-global-ose" kernel in your notebook with Kernel > Ch
 You're now good to go ! 
 
 
-## Download the data
+### Download the data
 
 The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2023a_SSH_mapping_OSE/catalog.html). The disk space needed to locally download the full dataset (for the reconstruction experiment, the independant evaluation and the comparison) is approximately 33Go. The comparison data is by far the heaviest with approximately 26Go. 
 
-#### A notebook to illustrate how to download and read the global data is available: [download_and_acces_global_data.ipynb](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_download_data/download_and_acces_global_data.ipynb)
+**A notebook to illustrate how to download and read the global data is available: [download_and_acces_global_data.ipynb](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_download_data/download_and_acces_global_data.ipynb)**
 
 
-#### If you are only interested in regional data, a notebook is available to read online the global data and download only regional data: [read_and_download_regional_data.ipynb](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_download_data/read_and_download_regional_data.ipynb)
+**If you are only interested in regional data, a notebook is available to read online the global data and download only regional data: [read_and_download_regional_data.ipynb](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_download_data/read_and_download_regional_data.ipynb)**
 
 The dataset is presented with the following directory structure:
 
-### 1) Data for experiment
+#### Data description
 
-##### Nadir alongtrack data (L3 products) for SSH map reconstruction
+- **Data for experiment**
+
+**Nadir alongtrack data (L3 products) for SSH map reconstruction**
 
 ```
 .
 |-- alongtrack
 ``` 
 
-### 2) Data for evaluation
+- **Data for evaluation**
 
-##### Independant nadir alongtrack data (L3 products) for SSH evaluation
+**Independant nadir alongtrack data (L3 products) for SSH evaluation**
 
 ```
 .
@@ -111,7 +112,7 @@ The dataset is presented with the following directory structure:
 |   |   |   |-- dt_global_alg_phy_l3_2019*.nc
 ```
 
-##### Independant drifters for currents evaluation
+**Independant drifters for currents evaluation**
 
 ```
 .
@@ -121,7 +122,7 @@ The dataset is presented with the following directory structure:
 |   |-- reformate_drifters.ipynb   % Preprocessing notebook (for informational purposes, not needed for experiments)
 ```
 
-##### Auxiliary data for diagnostics
+**Auxiliary data for diagnostics**
 
 ```
 .
@@ -132,9 +133,9 @@ The dataset is presented with the following directory structure:
 
 ```
 
-### 3) Data for comparison
+- **Data for comparison**
 
-##### Reconstruction maps for comparison
+**Reconstruction maps for comparison**
 
 ```
 .
@@ -145,7 +146,7 @@ The dataset is presented with the following directory structure:
 ```
 
 
-### Download and read the data
+#### Download and read the data
 
 The data can be downloaded locally using the wget command. We recommand that the data be stored in the `data/` repository. 
 For example, to download and unzip the experiment alongtrack data:
@@ -158,11 +159,11 @@ rm -f alongtrack.tar.gz
 ```
 
 
-## Evaluation
+### Evaluation
 
 The mapping methods are evaluated against independent data using two independant datasets:
 
-### Independant nadir SSH data: [Check example 1](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/ssh_scores_DUACS_geos.ipynb)
+#### Independant nadir SSH data: [Check example 1](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/ssh_scores_DUACS_geos.ipynb)
 
 The ocean surface topography reconstruction is compared with independant data from Saral/AltiKa altimeter. The metrics available using this independant dataset are:
 
@@ -170,7 +171,7 @@ The ocean surface topography reconstruction is compared with independant data fr
 - Statistics by regimes (scalar scores) 
 - Spectral effective resolution (maps)
 
-### Independant drifter currents data: [Check example 2](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/uv_scores_DUACS_geos.ipynb)
+#### Independant drifter currents data: [Check example 2](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/uv_scores_DUACS_geos.ipynb)
 
 The surface currents are assessed by comparing them to the surface drifter velocities. The metrics available using this independant dataset are:
 
@@ -181,15 +182,15 @@ The surface currents are assessed by comparing them to the surface drifter veloc
 
  
 
-## Data processing
+## Available tools and metrics
 
 Cross-functional modules are gathered in the `src` directory. They include tools for regridding, plots, evaluation, writing and reading NetCDF files.   
 
 
 
-# 3.  Mapping evaluation 
+##  Mapping evaluation results 
 
-## Check mapping evaluation [here](https://2023a-ssh-mapping-ose.readthedocs.io).
+**Check mapping evaluation results [here](https://2024c-dc-4dmedsea-esa.readthedocs.io).**
 
 
 

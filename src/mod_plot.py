@@ -220,7 +220,7 @@ def plot_effective_resolution(filename):
  
 
 
-def plot_effective_resolution_png(filename,region='glob',box_lonlat=None, change_lon=True):
+def plot_effective_resolution_png(filename,region='glob',box_lonlat=None, change_lon=True, max_resol=500):
     """
     Generate and save a PNG image of effective resolution.
 
@@ -262,8 +262,8 @@ def plot_effective_resolution_png(filename,region='glob',box_lonlat=None, change
                         figsize=(5.5,3.25))
 
     
-    vmin = 100.
-    vmax= 500.
+    vmin = 30.
+    vmax= max_resol
     p0 = axs.pcolormesh(ds.lon, ds.lat, ds.effective_resolution, vmin=vmin, vmax=vmax, cmap='Spectral_r')
     axs.set_title('SSH Map Effective resolution')
     axs.add_feature(cfeature.LAND, color='w', zorder=12)
