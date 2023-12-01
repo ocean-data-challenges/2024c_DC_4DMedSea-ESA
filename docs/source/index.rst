@@ -83,7 +83,7 @@ The altimeter data from the Haiyang-2A (H2A) altimeter and surface current veloc
    1_getstarted/getstarted_eval.md
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Generic evaluation
 
    2_eval_generic/eval_overall.md
@@ -95,7 +95,7 @@ The altimeter data from the Haiyang-2A (H2A) altimeter and surface current veloc
   
    
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Metrics details
 
    5_metrics_det/metrics_alongtrack.md
@@ -103,7 +103,7 @@ The altimeter data from the Haiyang-2A (H2A) altimeter and surface current veloc
    5_metrics_det/metrics_driftertraj.md
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Scripts
 
    6_scripts/modules.rst
