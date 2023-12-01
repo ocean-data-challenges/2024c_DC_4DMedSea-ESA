@@ -20,7 +20,7 @@ So far, the github page visits amount to:
 This ITT is part of the ESA Mediterranean Regional Initiative aimed at exploring and exploiting the huge synergistic opportunities offered by the increasing EO European satellite capacity together with in-situ observations, advanced models and novel technologies (AI, ICTs, cloud computing capacity, HPCs) to enhance observations over the Mediterranean region, advance the scientific understanding of the role of the Mediterranean area in the Earth and climate system and transfer that knowledge into new solutions for society.In addition, this activity makes part of the ESA Ocean Science Cluster and contributes to the joint EC-ESA Earth System Science Initiative launched in February 2020 by the European Space Agency and the European Commission (EC) Directorate-General for Research and Innovation (DG RTD) to jointly advance Earth System Science and its response to the global challenges that society is facing in the onset of this century. In particular, this activity is a contribution to the EC-ESA Flagship Action on Ocean Health aimed at developing advanced ocean observations and products and enhancing the scientific understanding of the ocean's role in the Earth and climate system and its responses to management actions to contribute to reverse the cycle of decline in ocean health and improve conditions for sustainable development of the Ocean. 
 
 <p align="center">
-  <img src="_static/DC_4DMedSea_IllustrationMap.png" alt="Alt Text" width="800"/>
+  <img src="docs/source/_static/DC_4DMedSea_IllustrationMap.png" alt="Alt Text" width="800"/>
 </p>
  
 
