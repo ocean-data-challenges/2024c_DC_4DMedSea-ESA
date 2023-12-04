@@ -50,6 +50,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_navigate.html">Navigate the GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_data.html">Download the data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Evaluate your own maps</a></li>
 </ul>
@@ -122,13 +123,14 @@
 </h3><p>At the end of this notebook you will know:</p>
 <ul><li><p>How you can download and read all the necessary data for this data challenge.</p>
 </li></ul></div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
 <span class="kn">from</span> <span class="nn">src.mod_read</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1863,25 +1865,19 @@ Attributes: (12/44)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%time
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;../data/independent_drifters&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Independant drifters data already exist locally in ../data/&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Downloading independant drifters data&#39;</span><span class="p">)</span>
 
-if os.path.isdir(&#39;../data_dev/independent_drifters0&#39;):
-    print(&#39;Independant drifter data already exist locally in ../data/&#39;)
-else:
-    print(&#39;Downloading independent drifter data&#39;)
+    <span class="c1"># Download the alongtrack repository</span>
+    <span class="o">!</span>wget<span class="w"> </span>https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2023a_SSH_mapping_OSE/independent_drifters.tar.gz
 
-    path_catalog = &quot;https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2023a_SSH_mapping_OSE/independent_drifters/catalog.html&quot;
-    path_data =    &quot;https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2023a_SSH_mapping_OSE/independent_drifters/&quot;
+    <span class="c1"># Uncompress in ../data</span>
+    <span class="o">!</span>tar<span class="w"> </span>-xvf<span class="w"> </span>independent_drifters.tar.gz<span class="w"> </span>--directory<span class="w"> </span>../data
 
-
-    list_of_files = retrieve_list_of_files_from_url(path_catalog, path_data,None,False)
-
-    !mkdir ../data_dev/independant_drifters0
-
-    i = 0
-    for ifile in sorted(list_of_files)[:]:
-        print(ifile)
-        os.system(&quot;wget -P ../data_dev/independant_drifters0/ i {}&quot;.format(ifile))
+    <span class="c1"># Remove compressed file</span>
+    <span class="o">!</span>rm<span class="w"> </span>-f<span class="w"> </span>independent_drifters.tar.gz
 </pre></div>
 </div>
 </div>
