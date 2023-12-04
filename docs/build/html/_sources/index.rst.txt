@@ -50,7 +50,7 @@ The Data Challenge Setup
 Reconstruction 
 --------------
 
-The reconstruction covers the period from **January 1st, 2017 to December 31st, 2017** in the Mediterranean basin from **6°E to 36°W and 30°N to 46°N**.
+The reconstruction covers the period from **January 1st, 2017 to December 31st, 2017** in the Mediterranean basin from **6°W to 36°E and 30°N to 46°N**.
 
 Observations
 ------------
@@ -73,20 +73,31 @@ The SSH observations used in this study comprise data from a nadir altimeter con
 
 - **Cryosat-2 (c2, c2n).** 
 
-These data are distributed by the Copernicus Marine Service [https://doi.org/10.48670/moi-00146](https://doi.org/10.48670/moi-00146).  
+The **Haiyang-2A (H2A)** altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.
 
-*The **Haiyang-2A (H2A)** altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.*
+These data are distributed by the Copernicus Marine Service https://doi.org/10.48670/moi-0014 .
 
   
 Evaluation
 ----------
 
+**Data**
+
 - Independant nadir: Haiyang-2A (H2A)
 
 - Independant drifters 
 
-Drifter data are also distributed by CMEMS [https://doi.org/10.17882/86236]( https://doi.org/10.17882/86236).
+Drifter data are also distributed by CMEMS https://doi.org/10.17882/86236 .
  
+**Metrics** 
+
+Check Metrics Details:
+
+- `SSH - Along track metrics <https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_alongtrack.html>`_ 
+- `Currents - Along drifter metrics <https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_alongdrifter.html>`_
+- `Currents - Lagrangian metrics <https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_driftertraj.html>`_
+
+
 
  
 
@@ -96,14 +107,17 @@ Drifter data are also distributed by CMEMS [https://doi.org/10.17882/86236]( htt
  
     
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Get started
 
    1_getstarted/getstarted_install.md
+   1_getstarted/getstarted_navigate.md
    1_getstarted/getstarted_data.md 
    1_getstarted/getstarted_eval.md
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Generic evaluation
 
@@ -116,6 +130,7 @@ Drifter data are also distributed by CMEMS [https://doi.org/10.17882/86236]( htt
   
    
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: Metrics details
 
@@ -124,6 +139,7 @@ Drifter data are also distributed by CMEMS [https://doi.org/10.17882/86236]( htt
    5_metrics_det/metrics_driftertraj.md
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: Scripts
 
