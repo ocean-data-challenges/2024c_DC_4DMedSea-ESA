@@ -46,26 +46,47 @@ In that context, the overarching objectives of the 4DMED ITT are to exploit the 
 
 The Data Challenge Setup
 ========================
+ 
+Reconstruction 
+--------------
 
-
+The reconstruction covers the period from **January 1st, 2017 to December 31st, 2017** in the Mediterranean basin from **6°E to 36°W and 30°N to 46°N**.
 
 Observations
 ------------
 
-The SSH observations used in this study comprise data from a nadir altimeter constellation that includes Saral/Altika (alg), Jason-2 (j2, j2g, j2n), Jason-3 (j3, j3n), Sentinel-3A (s3a), Sentinel-3B (s3b), Sentinel-6 (s6), Haiyang-2B (h2b), and Cryosat-2 (c2, c2n). These data are distributed by the Copernicus Marine Service [https://doi.org/10.48670/moi-00146](https://doi.org/10.48670/moi-00146) and cover the period from January 1st, 2017 to December 31st, 2017. The Haiyang-2A (H2A) altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.
+The SSH observations used in this study comprise data from a nadir altimeter constellation that includes:
 
-In addition, independent assessment of ocean surface currents is performed using in situ data, which are also distributed by CMEMS [https://doi.org/10.17882/86236]( https://doi.org/10.17882/86236).
+- **Saral/Altika (alg),**  
 
+- **Jason-2 (j2, j2g, j2n),**  
 
-Data sequence and use
----------------------
+- **Jason-3 (j3, j3n),**  
 
-The SSH reconstructions are assessed in the Mediterranean basin and over the period from 2017-01-01 to 2017-12-31.
+- **Sentinel-3A (s3a),**  
 
-For reconstruction methods that need a spin-up, the **observations** from other period can be used.
+- **Sentinel-3B (s3b),** 
 
-The altimeter data from the Haiyang-2A (H2A) altimeter and surface current velocity data mentioned above should never be used so that all reconstructions can be considered uncorrelated to the evaluation period.
+- **Sentinel-6 (s6),**  
 
+- **Haiyang-2B (h2b),** 
+
+- **Cryosat-2 (c2, c2n).** 
+
+These data are distributed by the Copernicus Marine Service [https://doi.org/10.48670/moi-00146](https://doi.org/10.48670/moi-00146).  
+
+*The **Haiyang-2A (H2A)** altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.*
+
+  
+Evaluation
+----------
+
+- Independant nadir: Haiyang-2A (H2A)
+
+- Independant drifters 
+
+Drifter data are also distributed by CMEMS [https://doi.org/10.17882/86236]( https://doi.org/10.17882/86236).
+ 
 
  
 
