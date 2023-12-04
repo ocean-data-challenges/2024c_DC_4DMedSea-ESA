@@ -251,9 +251,9 @@ def compute_stat_scores_by_regimes(ds_interp, output_file):
     >>> compute_stat_scores_by_regimes(interpolated_data, output_file)
     """
     
-    distance_to_nearest_coast = '../data/sad/distance_to_nearest_coastline_60.nc'
-    land_sea_mask = '../data/sad/land_water_mask_60.nc'
-    variance_ssh = '../data/sad/variance_cmems_dt_allsat.nc'
+    distance_to_nearest_coast = '../data/eval/sad/distance_to_nearest_coastline_60.nc'
+    land_sea_mask = '../data/eval/sad/land_water_mask_60.nc'
+    variance_ssh = '../data/eval/sad/variance_cmems_dt_allsat.nc'
     variance_criteria = 0.02             # min variance contour in m**2 to define the high variability regions
     coastal_distance_criteria = 200.     # max distance to coast in km to define the coastal regions
     
@@ -645,9 +645,9 @@ def compute_stat_scores_uv_by_regimes(ds_interp, output_file):
     None
     """
     
-    distance_to_nearest_coast = '../data/sad/distance_to_nearest_coastline_60.nc'
-    land_sea_mask = '../data/sad/land_water_mask_60.nc'
-    variance_ssh = '../data/sad/variance_cmems_dt_allsat.nc'
+    distance_to_nearest_coast = '../data/eval/sad/distance_to_nearest_coastline_60.nc'
+    land_sea_mask = '../data/eval/sad/land_water_mask_60.nc'
+    variance_ssh = '../data/eval/sad/variance_cmems_dt_allsat.nc'
     variance_criteria = 0.02             # min variance contour in m**2 to define the high variability regions
     coastal_distance_criteria = 200.     # max distance to coast in km to define the coastal regions
     

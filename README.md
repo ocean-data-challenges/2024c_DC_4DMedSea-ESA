@@ -28,21 +28,47 @@ In that context, the overarching objectives of the 4DMED ITT are to exploit the 
 
 ## The Data Challenge Setup
 
+### Reconstruction 
+
+The reconstruction covers the period from **January 1st, 2017 to December 31st, 2017** in the Mediterranean basin from **6°W to 36°E and 30°N to 46°N**.
  
 ### Observations
 
-The SSH observations used in this study comprise data from a nadir altimeter constellation that includes Saral/Altika (alg), Jason-2 (j2, j2g, j2n), Jason-3 (j3, j3n), Sentinel-3A (s3a), Sentinel-3B (s3b), Sentinel-6 (s6), Haiyang-2B (h2b), and Cryosat-2 (c2, c2n). These data are distributed by the Copernicus Marine Service [https://doi.org/10.48670/moi-00146](https://doi.org/10.48670/moi-00146) and cover the period from January 1st, 2017 to December 31st, 2017. The Haiyang-2A (H2A) altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.
+The SSH observations used in this study comprise data from a nadir altimeter constellation that includes: 
 
-In addition, independent assessment of ocean surface currents is performed using in situ data, which are also distributed by CMEMS [https://doi.org/10.17882/86236]( https://doi.org/10.17882/86236).
+- **Saral/Altika (alg),**  
+- **Jason-2 (j2, j2g, j2n),**  
+- **Jason-3 (j3, j3n),**  
+- **Sentinel-3A (s3a),**  
+- **Sentinel-3B (s3b),** 
+- **Sentinel-6 (s6),**  
+- **Haiyang-2B (h2b), ** 
+- **Cryosat-2 (c2, c2n).** 
 
 
-### Data sequence and use 
+The **Haiyang-2A (H2A)** altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.
 
-The SSH reconstructions are assessed in the Mediterranean basin and over the period from 2017-01-01 to 2017-12-31.
+These data are distributed by the Copernicus Marine Service [`https://doi.org/10.48670/moi-0014`](https://doi.org/10.48670/moi-00146).  
 
-For reconstruction methods that need a spin-up, the **observations** from other period can be used.
 
-The altimeter data from the Haiyang-2A (H2A) altimeter and surface current velocity data mentioned above should never be used so that all reconstructions can be considered uncorrelated to the evaluation period.
+ 
+### Evaluation
+
+#### Data
+
+- Independant nadir: Haiyang-2A (H2A)
+
+- Independant drifters 
+
+Drifter data are also distributed by CMEMS [`https://doi.org/10.17882/8623`](https://doi.org/10.17882/86236).
+
+#### Metrics 
+
+Check Metrics Details:
+
+- [SSH - Along track metrics](https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_alongtrack.html)
+- [Currents - Along drifter metrics](https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_alongdrifter.html)
+- [Currents - Lagrangian metrics](https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_driftertraj.html)
 
 
 ## Get started
@@ -53,11 +79,11 @@ The altimeter data from the Haiyang-2A (H2A) altimeter and surface current veloc
 
 Clone the data challenge repo: 
 ```
-git clone https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE.git
+git clone https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA.git
 ```
 or using SSH: 
 ```
-git clone git@github.com:ocean-data-challenges/2023a_SSH_mapping_OSE.git
+git clone git@github.com:ocean-data-challenges/2024c_DC_4DMedSea-ESA.git
 ```
 
 create the data challenge conda environment, named env-dc-swot-filtering, by running the following command:
@@ -67,96 +93,107 @@ conda env create --file=dc_environment.yml
 and activate it with:
 
 ```
-conda activate env-dc-global-ose
+conda activate env-dc-4dmedsea-esa
 ```
 then add it to the available kernels for jupyter to see: 
 ```
-ipython kernel install --name "env-dc-global-ose" --user
+ipython kernel install --name "env-dc-4dmedsea-esa" --user
 ```
-finally, select the "env-dc-global-ose" kernel in your notebook with Kernel > Change Kernel.
+finally, select the "env-dc-4dmedsea-esa" kernel in your notebook with Kernel > Change Kernel.
 
 You're now good to go ! 
 
 
 ### Download the data
 
-The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2023a_SSH_mapping_OSE/catalog.html). The disk space needed to locally download the full dataset (for the reconstruction experiment, the independant evaluation and the comparison) is approximately 33Go. The comparison data is by far the heaviest with approximately 26Go. 
+The data are hosted and can be accessed on the MEOM server opendap [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024c_DC_4DMedSea-ESA/catalog.html).  
 
-**A notebook to illustrate how to download and read the global data is available: [download_and_acces_global_data.ipynb](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_download_data/download_and_acces_global_data.ipynb)**
-
-
-**If you are only interested in regional data, a notebook is available to read online the global data and download only regional data: [read_and_download_regional_data.ipynb](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_download_data/read_and_download_regional_data.ipynb)**
+#### Data information
 
 The dataset is presented with the following directory structure:
 
-#### Data description
-
-- **Data for experiment**
+- 1) Data for experiment: obs/
 
 **Nadir alongtrack data (L3 products) for SSH map reconstruction**
 
 ```
 .
-|-- alongtrack
+|-- obs
+|   |-- alg 
+|   |   |-- dt_europe_alg_phy_l3_2017* 
+|   |-- c2 
+|   |   |-- dt_europe_c2_phy_l3_2017* 
+|   |-- j2g 
+|   |   |-- dt_europe_j2g_phy_l3_2017* 
+|   |-- j2n 
+|   |   |-- dt_europe_j2n_phy_l3_2017* 
+|   |-- j3 
+|   |   |-- dt_europe_j3_phy_l3_2017* 
+|   |-- s3a
+|   |   |-- dt_europe_s3a_phy_l3_2017* 
 ``` 
 
-- **Data for evaluation**
+- 2) Data for evaluation: eval/
 
 **Independant nadir alongtrack data (L3 products) for SSH evaluation**
 
 ```
 .
-|-- independant_alongtrack
-|   |-- alg		% DT Altika Drifting Phase Global Ocean Along track SSALTO/DUACS Sea Surface Height L3 product
-|   |   |-- 2019
-|   |   |   |-- dt_global_alg_phy_l3_2019*.nc
+|-- eval
+|   |-- indep_nadirs
+|   |   |-- h2ag
+|   |   |   |-- dt_europe_h2ag_phy_l3_2017*		% Haiyang-2A (H2A) Drifting Phase Europe Ocean Along track SSALTO/DUACS Sea Surface Height L3 product 
 ```
 
 **Independant drifters for currents evaluation**
 
 ```
 .
-|-- independent_drifters
-|   |-- uv_drifters_*.nc           % Drifter data
-|   |-- index_history.txt          % Preprocessing drifter data information
-|   |-- reformate_drifters.ipynb   % Preprocessing notebook (for informational purposes, not needed for experiments)
+|-- eval
+|   |-- independent_drifters 
 ```
 
 **Auxiliary data for diagnostics**
 
 ```
 .
-|-- sad
+|-- eval
+|   |-- sad
 |   |-- distance_to_nearest_coastline_60.nc
 |   |-- land_water_mask_60.nc
 |   |-- variance_cmems_dt_allsat.nc
 
 ```
 
-- **Data for comparison**
+- 3) Data for comparison
 
 **Reconstruction maps for comparison**
 
 ```
 .
 |-- maps
-|   |-- DUACS_global_allsat-alg			% DUACS reconstruction			
-|   |-- MIOST_geos_global_allsat-alg		% MIOST reconstruction
-|   |-- MIOST_geos_barotrop_eqwaves_global_allsat-alg	% MIOST reconstruction with barotropic and equatorial waves processing
+|   |-- DUACS			% DUACS reconstruction with all sat (including evaluation)			
+|   |-- MIOST		% MIOST reconstruction 
 ```
 
 
 #### Download and read the data
 
 The data can be downloaded locally using the wget command. We recommand that the data be stored in the `data/` repository. 
-For example, to download and unzip the experiment alongtrack data:
+For example, to download and unzip the experiment `obs/` data:
+
 
 ```
-cd data/
-wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2023a_SSH_mapping_OSE/alongtrack/* 
-tar -xvf alongtrack.tar.gz  
-rm -f alongtrack.tar.gz
+cd data/ 
+wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2024c_DC_4DMedSea-ESA/obs.tar.gz 
+tar -xvf obs.tar.gz  
+rm -f obs.tar.gz
 ```
+
+**Example notebook**
+
+A notebook to illustrate how to download and read the global data is available: [download_and_open_data.ipynb](../gallery/download_and_open_data.ipynb)
+ 
 
 
 ### Evaluation

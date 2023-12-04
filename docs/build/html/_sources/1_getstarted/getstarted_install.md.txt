@@ -22,7 +22,7 @@ conda env create --file=dc_environment.yml
 and activate it with:
 
 ```
-conda activate env-dc-global-ose
+conda activate env-dc-4dmedsea-esa
 ```
 then add it to the available kernels for jupyter to see: 
 ```
