@@ -1,6 +1,4 @@
-## :warning: WORK in progress. This data-challenge is still under construction
-  
-# Check out the data challenge [website](https://2023a-ssh-mapping-ose.readthedocs.io) for more infos !
+# Check out the data challenge [website](https://2024c-dc-4dmedsea-esa.readthedocs.io) for more infos !
 
 <p align="center">
   <img src="figures/dc_2024_4dmedsea_banner.jpg" alt="Alt Text" width="900"/>
