@@ -6,8 +6,7 @@
 <br>
 
 ##  Quantitative overview 
-
-### Error variances 
+ 
 
 |               | RMSE | RMSE score | Effective res. |
 |---------------|------|------------|----------------|
