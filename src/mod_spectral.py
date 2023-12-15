@@ -605,6 +605,7 @@ def spectral_computation_v2(lon_segment, lat_segment, ref_segments, study_segmen
                 selected_segment = np.where(np.logical_and(lon_segment[selected_lat_index] % 360. >= lon_min,
                                                            lon_segment[selected_lat_index] % 360. <= lon_max))[0]
 
+            
             if len(selected_segment) > nb_min_segment:
                 selected_ref_segments = np.ma.masked_where(ref_segments_tmp[selected_segment].flatten() > 1.E10,
                                                            ref_segments_tmp[selected_segment].flatten())
@@ -661,10 +662,9 @@ def spectral_computation_v2(lon_segment, lat_segment, ref_segments, study_segmen
                 list_mean_psd_study.append(psd_study)
                 list_mean_psd_diff_study_ref.append(psd_diff_study_ref)
                 list_mean_coherence.append(coherence)
-                list_mean_cross_spectrum.append(cross_spectrum)
-                
+                list_mean_cross_spectrum.append(cross_spectrum)  
 
-            else:
+            else: 
 
                 # list_mean_frequency.append(np.zeros(npt))
                 # list_mean_psd_ref.append(np.zeros(npt))
@@ -692,6 +692,7 @@ def spectral_computation_v2(lon_segment, lat_segment, ref_segments, study_segmen
         
     # wavenumber = np.ma.mean(np.ma.masked_invalid(np.ma.masked_where(np.asarray(list_mean_frequency) == 0,
     #                                                           np.asarray(list_mean_frequency))), axis=0).filled(0.)
+      
     
     nb_segment = np.asarray(list_nb_segment).reshape((vlat.size, vlon.size))
     psd_ref = np.transpose(np.asarray(list_mean_psd_ref)).reshape((wavenumber_to_keep.size, vlat.size, vlon.size))
@@ -699,6 +700,9 @@ def spectral_computation_v2(lon_segment, lat_segment, ref_segments, study_segmen
     psd_diff = np.transpose(np.asarray(list_mean_psd_diff_study_ref)).reshape((wavenumber_to_keep.size, vlat.size, vlon.size))
     coherence = np.transpose(np.asarray(list_mean_coherence)).reshape((wavenumber_to_keep.size, vlat.size, vlon.size))
     cross_spectrum = np.transpose(np.asarray(list_mean_cross_spectrum)).reshape((wavenumber_to_keep.size, vlat.size, vlon.size))
+    
+     
+     
     
     return wavenumber_to_keep, vlat, vlon, nb_segment, psd_ref, psd_study, psd_diff, coherence, cross_spectrum
 

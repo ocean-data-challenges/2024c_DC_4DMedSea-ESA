@@ -11,7 +11,7 @@ import numpy as np
 import os
 
 
-def prepare_drifter_data(ds_drifters,maps):
+def prepare_drifter_data(ds_drifters,maps, time_min_str='2019-01-01', time_max_str='2019-12-31'):
     """
     Prepare drifter data for analysis.
 
@@ -40,9 +40,9 @@ def prepare_drifter_data(ds_drifters,maps):
     # Usage Example:
     ind, time_drifter, lon_drifter, lat_drifter, id_drifter = prepare_drifter_data(drifter_data, maps_data)
     """
-
-    time_min = (np.datetime64('2019-01-01') - np.datetime64('1950-01-01')) / np.timedelta64(1, 'D')
-    time_max = (np.datetime64('2019-12-31') - np.datetime64('1950-01-01')) / np.timedelta64(1, 'D')
+ 
+    time_min = (np.datetime64(time_min_str) - np.datetime64('1950-01-01')) / np.timedelta64(1, 'D')
+    time_max = (np.datetime64(time_max_str) - np.datetime64('1950-01-01')) / np.timedelta64(1, 'D') 
     lon_min = maps.longitude.min().values
     lon_max = maps.longitude.max().values
     lat_min = maps.latitude.min().values
@@ -65,7 +65,7 @@ def prepare_drifter_data(ds_drifters,maps):
     id_drifter = ds_drifters.sensor_id.values
 
 
-    time_drifter = (time_drifter.astype('datetime64[h]') - np.datetime64('2019-01-01')).astype(int)
+    time_drifter = (time_drifter.astype('datetime64[h]') - np.datetime64(time_min_str)).astype(int)
 
     ind = np.argsort(time_drifter) 
     time_drifter = time_drifter[ind]
@@ -382,7 +382,7 @@ def compute_deviation(dict1, Nt, dt_hr, horizon_days,lon_out=np.arange(0, 360, 1
     else: 
         
         if os.path.isfile(f'{dir_out}/{results_out}'): 
-            print("Warning: Overwriting the file f'{dir_out}/{results_out}'")
+            print("Warning: Overwriting the file "+dir_out+results_out)
     
     
         import pyinterp

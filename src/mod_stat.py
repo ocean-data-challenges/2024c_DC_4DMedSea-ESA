@@ -914,6 +914,14 @@ def compute_stat_scores_uv(ds_interp, output_file,method_name=''):
     ds_interp['mapping_err_u'] = ds_interp['ugos_interpolated'] - ds_interp['EWCT']
     ds_interp['mapping_err_v'] = ds_interp['vgos_interpolated'] - ds_interp['NSCT']
     
+    
+    
+    print('Total RMSE u=',np.sqrt(np.mean(ds_interp['mapping_err_u'].values**2)),'m')
+    print('Total RMSE v=',np.sqrt(np.mean(ds_interp['mapping_err_v'].values**2)),'m')
+    
+    print('Total RMSE u score=',1-np.sqrt(np.mean(ds_interp['mapping_err_u'].values**2))/np.sqrt(np.mean((ds_interp['EWCT']).values**2)),'m')
+    print('Total RMSE v score=',1-np.sqrt(np.mean(ds_interp['mapping_err_v'].values**2))/np.sqrt(np.mean((ds_interp['NSCT']).values**2)),'m')
+    
     logging.info("Compute statistics")
     # Bin data maps
     bin_data_uv(ds_interp, output_file,method_name=method_name)
@@ -922,4 +930,29 @@ def compute_stat_scores_uv(ds_interp, output_file,method_name=''):
     logging.info("Compute statistics by oceanic regime")
     compute_stat_scores_uv_by_regimes(ds_interp, output_file)
  
+    
+def compute_temporal_rmse(ds_interp, method_name, time_min, time_max, rmse_filename, var_type='sla'):
+
+    RMSE = list() 
+    days = np.arange(np.datetime64(time_min),np.datetime64(time_max))
+    for time_day in days:
+        ds_interp_day = ds_interp.sel({'time':slice(time_day,time_day+np.timedelta64(1,'D'))})
+        if var_type == 'sla':
+            RMSE.append(np.sqrt(np.mean((ds_interp_day.sla_unfiltered.values-ds_interp_day.lwe.values-ds_interp_day.msla_interpolated.values)**2)))  
+        if var_type == 'uv':
+            RMSE.append((np.sqrt(np.mean((ds_interp_day.EWCT.values-ds_interp_day.ugos_interpolated.values)**2))+
+                        np.sqrt(np.mean((ds_interp_day.NSCT.values-ds_interp_day.vgos_interpolated.values)**2)))/2) 
+    
+    ds_RMSE = xr.Dataset(
+         data_vars=dict(
+             rmse=(["days"], RMSE), 
+         ),
+         coords=dict(
+             days=(["days"], days), 
+         ),
+         attrs=dict(description="Temporal RMSE.", method=method_name),
+     )
+    
+    ds_RMSE.to_netcdf(rmse_filename)
+    
     

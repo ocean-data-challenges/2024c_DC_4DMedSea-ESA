@@ -1065,6 +1065,9 @@ def plot_stat_score_map_png(filename,region='glob',box_lonlat=None, change_lon=T
     cbar = fig.colorbar(p1, cax=cax, orientation='vertical')
     cax.set_ylabel('Error variance [m$^2$]', fontweight='bold')
     
+    fig.subplots_adjust(bottom=0.2, top=0.9, left=0.1, right=0.9,
+                    wspace=0.02, hspace=0.01)
+    
     plt.savefig("../figures/Maps_"+str(method_name)+"_errvar_"+region+".png", bbox_inches='tight')
     
     
@@ -2006,3 +2009,152 @@ def movie(ds, name_var, method='DUACS', region='Global', dir_output='../results/
     # Display movie
     if Display: 
         return Video(os.path.join(dir_output, moviename),embed=True)
+
+    
+def plot_temporal_rmse(rmse_filename=None, output_dir='../results/', var_type='sla'): 
+    from glob import glob
+
+    if rmse_filename == None: 
+        if var_type == 'sla':
+            list_rmse = sorted(glob(f'{output_dir}/rmse_sla*.nc')) 
+        if var_type == 'uv':
+            list_rmse = sorted(glob(f'{output_dir}/rmse_uv*.nc'))
+        
+        
+        fig, ax1 = plt.subplots(figsize=(12,5)) 
+        if var_type == 'sla':
+            ax1.set_ylabel('SLA RMSE (m)',fontsize=13)
+            plt.ylim(0,0.12)
+        if var_type == 'uv':
+            ax1.set_ylabel('Currents RMSE (m/s)',fontsize=13)
+            plt.ylim(0,0.4)
+        for rmse_filename in list_rmse:
+            ds_1 = xr.open_dataset(rmse_filename)
+            ax1.plot(ds_1.days,ds_1.rmse, label=ds_1.attrs['method'])
+        ax1.tick_params(axis='y')
+        plt.legend(fontsize=13)  
+        plt.yticks(fontsize=13)
+        plt.grid() 
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        if var_type == 'sla':
+            fig.savefig("../figures/temporal_rmse_sla_comparison.png", bbox_inches='tight')
+        if var_type == 'uv':
+            fig.savefig("../figures/temporal_rmse_uv_comparison.png", bbox_inches='tight')
+        
+    else: 
+        ds_1 = xr.open_dataset(rmse_filename)
+        fig, ax1 = plt.subplots(figsize=(12,5)) 
+        if var_type == 'sla':
+            ax1.set_ylabel('SLA RMSE (m)',fontsize=13)
+            plt.ylim(0,0.12)
+        if var_type == 'uv':
+            ax1.set_ylabel('Currents RMSE (m/s)',fontsize=13)
+            plt.ylim(0,0.4)
+            
+        ax1.plot(ds_1.days,ds_1.rmse, label=ds_1.attrs['method'])
+        ax1.tick_params(axis='y')
+        plt.legend(fontsize=13)  
+        plt.yticks(fontsize=13)
+        plt.grid() 
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+
+        if var_type == 'sla':
+            fig.savefig("../figures/temporal_rmse_sla_"+ds_1.attrs['method']+".png", bbox_inches='tight')
+        if var_type == 'uv':
+            fig.savefig("../figures/temporal_rmse_uv_"+ds_1.attrs['method']+".png", bbox_inches='tight')
+        
+        
+def plot_average_psd(psd_output_filename=None, output_dir='../results/'):
+ 
+ 
+    from glob import glob
+
+    if psd_output_filename == None: 
+        list_psd = sorted(glob(f'{output_dir}/psd_sla*.nc'))  
+        
+        fig, ax1 = plt.subplots(figsize=(6,5))  
+        for psd_output_filename in list_psd:
+            ds_spec = xr.open_dataset(psd_output_filename)
+            ds_spec = ds_spec.where(ds_spec.psd_diff[0]<9.9e+5)
+            psd_ref = ds_spec.psd_ref.mean(('lon','lat'))
+            psd_study = ds_spec.psd_study.mean(('lon','lat'))
+            psd_diff = ds_spec.psd_diff.mean(('lon','lat'))
+            wavenum = ds_spec.wavenumber
+            
+            line, = ax1.loglog(wavenum, psd_study, label=ds_spec.attrs['method'])
+            ax1.loglog(wavenum, psd_diff, ':', color=line.get_color(), label=ds_spec.attrs['method']+' error') 
+            
+        ax1.loglog(wavenum, psd_ref, 'k--', label='Nadir')
+            
+        plt.title('PSD',fontsize=15)
+        plt.xlabel('cpkm',fontsize=13)
+        plt.xticks(fontsize=12)
+        plt.ylabel('m/cpkm',fontsize=13)
+        plt.yticks(fontsize=12)
+        plt.legend()
+        plt.grid() 
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        fig.savefig("../figures/psd_average_comparison.png", bbox_inches='tight')
+        
+        
+        fig, ax1 = plt.subplots(figsize=(6,5))  
+        for psd_output_filename in list_psd:
+            ds_spec = xr.open_dataset(psd_output_filename)
+            ds_spec = ds_spec.where(ds_spec.psd_diff[0]<9.9e+5)
+            psd_ref = ds_spec.psd_ref.mean(('lon','lat'))
+            psd_study = ds_spec.psd_study.mean(('lon','lat'))
+            psd_diff = ds_spec.psd_diff.mean(('lon','lat'))
+            wavenum = ds_spec.wavenumber
+            
+            ax1.semilogx(wavenum, 1 - psd_diff/psd_ref, label=ds_spec.attrs['method']) 
+             
+            
+        plt.title('NSR',fontsize=15)
+        plt.xlabel('cpkm',fontsize=13)
+        plt.xticks(fontsize=12)
+        plt.ylabel('NSR',fontsize=13)
+        plt.ylim(0,1)
+        plt.yticks(fontsize=12)
+        plt.legend()
+        plt.grid() 
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        fig.savefig("../figures/nsr_average_comparison.png", bbox_inches='tight')
+        
+    else: 
+        ds_spec = xr.open_dataset(psd_output_filename)
+        ds_spec = ds_spec.where(ds_spec.psd_diff[0]<9.9e+5)
+        psd_ref = ds_spec.psd_ref.mean(('lon','lat'))
+        psd_study = ds_spec.psd_study.mean(('lon','lat'))
+        psd_diff = ds_spec.psd_diff.mean(('lon','lat'))
+        wavenum = ds_spec.wavenumber
+        
+        fig, ax1 = plt.subplots(figsize=(6,5)) 
+        ax1.set_ylabel('SLA RMSE (m)',fontsize=13) 
+            
+        line, = ax1.loglog(wavenum, psd_study, label=ds_spec.attrs['method'])
+        ax1.loglog(wavenum, psd_diff, ':', color=line.get_color(), label=ds_spec.attrs['method']+' error') 
+        ax1.loglog(wavenum, psd_ref, 'k--', label='Nadir')
+        
+        plt.title('PSD',fontsize=15)
+        plt.xlabel('cpkm',fontsize=13)
+        plt.xticks(fontsize=12)
+        plt.ylabel('m/cpkm',fontsize=13)
+        plt.yticks(fontsize=12)
+        plt.legend()
+        plt.grid() 
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        fig.savefig("../figures/psd_average_"+ds_spec.attrs['method']+".png", bbox_inches='tight')
+        
+        
+        fig, ax1 = plt.subplots(figsize=(6,5))   
+        ax1.semilogx(wavenum, 1 - psd_diff/psd_ref, label=ds_spec.attrs['method'])  
+        plt.title('NSR',fontsize=15)
+        plt.xlabel('cpkm',fontsize=13)
+        plt.xticks(fontsize=12)
+        plt.ylabel('NSR',fontsize=13)
+        plt.yticks(fontsize=12)
+        plt.legend()
+        plt.ylim(0,1)
+        plt.grid() 
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        fig.savefig("../figures/nsr_average_"+ds_spec.attrs['method']+".png", bbox_inches='tight')
