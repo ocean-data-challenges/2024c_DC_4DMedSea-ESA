@@ -18,7 +18,7 @@
 
 - **SSH**
 
-![temporal_rmse_DUACS](../_static/temporal_rmse_DUACS.png)  
+![temporal_rmse_DUACS](../_static/temporal_rmse_duacs.png)  
 
 - **Currents**
 
