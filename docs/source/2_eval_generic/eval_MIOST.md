@@ -7,7 +7,7 @@
 
 ##  Total RMSE
  
-- **Total RMSE = 0.041**
+- **Total RMSE = 0.046**
 
 - **RMSE score = 0.55**
 <br>
