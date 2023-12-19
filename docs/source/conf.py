@@ -56,7 +56,7 @@ source_suffix = {
  
 myst_enable_extensions = ["dollarmath", "amsmath"]
 
-myst_footnote_transition = False
+myst_footnote_transition = False 
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
