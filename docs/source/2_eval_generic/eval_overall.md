@@ -1,17 +1,15 @@
-# Overall evaluation
+# Overall evaluation 
 
 <br>
  
 
 <br>
 
-## Movies
-
-<details>
-<summary>Dropdown</summary>
+## Movies {.tabset .tabset-fade}
+ 
 <br> 
     
-### SLA movie
+### tab SLA movie
 
 <center>
 <video controls width="1000">
@@ -19,7 +17,7 @@
 </video>
 </center>
  
-### Current magnitud movie 
+### tab Current magnitud movie 
  
 
 <center>
@@ -27,15 +25,10 @@
   <source src="../_static/movie_intercomp_4DMedSea_uv.mp4" type="video/mp4" />  
 </video>
 </center>
-  
-</details>
-
-<br>
-
-##  Scores overview 
    
-<details>
-<summary>Dropdown</summary>
+ 
+##  Scores overview 
+    
 <br>  
     
 ### Independant nadir evaluation
@@ -68,16 +61,12 @@
 |---------------|--------|--------------|--------|--------------| 
 |**MIOST**          | 0.128  | 0.31         | 0.127  | 0.29         |
 |**4DVarNet**          | 0.132  | 0.30         | 0.135  | 0.25         |
-
-   
-</details>
+ 
 
 <br>
 
 ##  Independant nadir evaluation
-
-<details>
-<summary>Dropdown</summary>
+ 
 <br> 
     
 ### Temporal RMSE
@@ -91,15 +80,11 @@
 
 |![temporal_rmse_comparison](../_static/psd_average_comparison.png) |  ![temporal_rmse_comparison](../_static/nsr_average_comparison.png)|
 | -- | -- |
- 
-</details>
-
+  
 <br>
 
 ## Independant drifter evaluation
- 
-<details>
-<summary>Dropdown</summary>
+  
 <br> 
     
 
@@ -121,8 +106,6 @@
 
 ![deviation_horizon_allbasins](../_static/deviation_horizon_allbasins.png)  
  
-
-</details>
-
+ 
 <br>
  
