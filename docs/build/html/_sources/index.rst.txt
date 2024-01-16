@@ -119,9 +119,12 @@ Check Metrics Details:
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Generic evaluation
+   :caption: Overall comparison
 
-   2_eval_generic/eval_overall.md
+   2_eval_generic/overall_movies.md
+   2_eval_generic/overall_scores.md
+   2_eval_generic/overall_nadireval.md
+   2_eval_generic/overall_driftereval.md
    
 .. toctree::
    :hidden:

@@ -1557,7 +1557,7 @@ def compare_stat_score_map_png(study_filename=None, ref_filename=None, output_di
                     if var_type == 'sla':
                         axs[0].set_title('SSH [All scale]')
                     if var_type == 'uv':
-                        axs[0].set_title('v') 
+                        axs[0].set_title('Zonal component: u') 
                     axs[0].coastlines(resolution='10m', lw=0.5)
                     # optional add grid lines
                     p2.axes.gridlines(color='black', alpha=0., linestyle='--')
@@ -1594,7 +1594,7 @@ def compare_stat_score_map_png(study_filename=None, ref_filename=None, output_di
                     if var_type == 'sla':
                         axs[1].set_title('SSH [65-500km]') 
                     if var_type == 'uv':
-                        axs[0].set_title('v') 
+                        axs[1].set_title('Meridional component: v') 
                     axs[1].coastlines(resolution='10m', lw=0.5)
                     # optional add grid lines
                     p3.axes.gridlines(color='black', alpha=0., linestyle='--')
@@ -1642,7 +1642,7 @@ def compare_stat_score_map_png(study_filename=None, ref_filename=None, output_di
                     if var_type == 'sla':
                         axs[0].set_title('SSH [All scale]') 
                     if var_type == 'uv':
-                        axs[0].set_title('u') 
+                        axs[0].set_title('Zonal component: u') 
                         
                     axs[0].coastlines(resolution='10m', lw=0.5)
                     # optional add grid lines
@@ -1669,7 +1669,7 @@ def compare_stat_score_map_png(study_filename=None, ref_filename=None, output_di
                     if var_type == 'sla':
                         axs[1].set_title('SSH [65-500km]') 
                     if var_type == 'uv':
-                        axs[0].set_title('v') 
+                        axs[1].set_title('Meridional component: v') 
                     axs[1].coastlines(resolution='10m', lw=0.5)
                     # optional add grid lines
                     p7.axes.gridlines(color='black', alpha=0., linestyle='--')

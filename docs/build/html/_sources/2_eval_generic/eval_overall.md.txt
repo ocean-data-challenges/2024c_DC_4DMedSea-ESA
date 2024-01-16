@@ -5,33 +5,42 @@
 
 <br>
 
-## Movies {.tabset .tabset-fade}
+## Movies 
  
-<br> 
-    
-### tab SLA movie
+     
 
+<details>
+<summary> SLA movie </summary>
 <center>
 <video controls width="1000">
   <source src="../_static/movie_intercomp_4DMedSea_sla.mp4" type="video/mp4" />  
 </video>
 </center>
- 
-### tab Current magnitud movie 
- 
 
+</details>
+  
+<br>
+
+<details>
+<summary> Current movie </summary>
 <center>
 <video controls width="1000">
   <source src="../_static/movie_intercomp_4DMedSea_uv.mp4" type="video/mp4" />  
 </video>
 </center>
+ 
+</details>
    
+<br>  
  
 ##  Scores overview 
     
-<br>  
     
-### Independant nadir evaluation
+    
+<details>
+<summary> Independant nadir evaluation </summary> 
+
+<br> 
 
 - **CMEMS product**
 
@@ -46,8 +55,14 @@
 |**MIOST**          |0.046 |0.55        |121.3 km        |
 |**4DVarNet**          |0.045 |0.56        |144.14 km        |
 
+</details>
+ 
+<br>
 
-### Independant drifter evaluation
+<details>
+<summary> Independant drifter evaluation </summary> 
+    
+<br> 
 
 - **CMEMS product**
 
@@ -62,39 +77,47 @@
 |**MIOST**          | 0.128  | 0.31         | 0.127  | 0.29         |
 |**4DVarNet**          | 0.132  | 0.30         | 0.135  | 0.25         |
  
+</details>
 
 <br>
 
 ##  Independant nadir evaluation
  
-<br> 
-    
-### Temporal RMSE
  
-
+<details>
+<summary>Temporal RMSE</summary> 
+    
 ![temporal_rmse_comparison](../_static/temporal_rmse_sla_comparison.png)  
 
+</details>
+ 
+<br>
 
-###  Averaged  alongtrack spectral scores
-
-
+<details>
+<summary> Averaged  alongtrack spectral scores</summary> 
+    
 |![temporal_rmse_comparison](../_static/psd_average_comparison.png) |  ![temporal_rmse_comparison](../_static/nsr_average_comparison.png)|
 | -- | -- |
   
+</details>
+
 <br>
 
 ## Independant drifter evaluation
   
-<br> 
-    
-
-### Temporal RMSE
+  
  
+<details>
+<summary>Temporal RMSE</summary> 
+    
 ![temporal_rmse_uv_comparison](../_static/temporal_rmse_uv_comparison.png)  
 
+</details>
+ 
 <br>
 
-###  Lagrangian Cumulative Distance
+<details>
+<summary>Lagrangian Cumulative Distance</summary>  
 
 |![DUACS-allsat LDC h1](../_static/deviation_maps_DUACS-allsat_h1.png) | ![MIOST LDC h1](../_static/deviation_maps_MIOST_h1.png) | ![4DVarNet LDC h1](../_static/deviation_maps_4DVarNet_h1.png) |
 |--|--|--|
@@ -106,6 +129,9 @@
 
 ![deviation_horizon_allbasins](../_static/deviation_horizon_allbasins.png)  
  
+</details>
  
+<br>
+  
 <br>
  
