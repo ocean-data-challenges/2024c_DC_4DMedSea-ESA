@@ -4,7 +4,7 @@
 ## Error statistics 
     
 <details>
-<summary>Error variance maps</summary> 
+    <summary>Error variance maps ⤵️ </summary> 
 
 <br>
 
@@ -29,7 +29,7 @@
 <br>
 
 <details>
-<summary>Explained variance maps</summary> 
+<summary>Explained variance maps ⤵️ </summary> 
 
 <br>
 
@@ -54,7 +54,7 @@
 <br>
 
 <details>
-<summary>RMSE time serie</summary> 
+<summary>RMSE time serie ⤵️ </summary> 
     
 ![temporal_rmse_comparison](../_static/temporal_rmse_sla_comparison.png)  
  
@@ -69,7 +69,7 @@
 
     
 <details>
-<summary>Averaged power spectrum density and noise-to-signal ratio</summary> 
+<summary>Averaged power spectrum density and noise-to-signal ratio ⤵️ </summary> 
     
 |![temporal_rmse_comparison](../_static/psd_average_comparison.png) |  ![temporal_rmse_comparison](../_static/nsr_average_comparison.png)|
 | -- | -- |
@@ -82,7 +82,7 @@
 
 
 <details>
-<summary>Effective resolution maps</summary> 
+<summary>Effective resolution maps ⤵️ </summary> 
 
 <br>
 

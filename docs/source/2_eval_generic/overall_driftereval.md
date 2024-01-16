@@ -4,7 +4,7 @@
 ## Error statistics 
     
 <details>
-<summary>Error variance maps</summary>  
+<summary>Error variance maps ⤵️ </summary>  
 
 <br> 
 
@@ -29,7 +29,7 @@
 <br>
 
 <details>
-<summary>Explained variance maps</summary>  
+<summary>Explained variance maps ⤵️ </summary>  
 
 <br> 
 
@@ -54,7 +54,7 @@
 <br>
 
 <details>
-<summary>RMSE time serie</summary> 
+<summary>RMSE time serie ⤵️ </summary> 
     
 ![temporal_rmse_uv_comparison](../_static/temporal_rmse_uv_comparison.png)  
  
@@ -66,7 +66,7 @@
 
 
 <details>
-<summary>Distance maps</summary>  
+<summary>Distance maps ⤵️ </summary>  
 
 |![DUACS-allsat LDC h1](../_static/deviation_maps_DUACS-allsat_h1.png) | ![MIOST LDC h1](../_static/deviation_maps_MIOST_h1.png) | ![4DVarNet LDC h1](../_static/deviation_maps_4DVarNet_h1.png) |
 |--|--|--|
@@ -80,7 +80,7 @@
 <br> 
 
 <details>
-<summary>Horizon plot</summary>  
+<summary>Horizon plot ⤵️ </summary>  
     
 ![deviation_horizon_allbasins](../_static/deviation_horizon_allbasins.png)  
  
