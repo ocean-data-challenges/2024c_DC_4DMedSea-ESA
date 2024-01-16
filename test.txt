@@ -1,0 +1,265 @@
+Running Sphinx v7.2.6
+making output directory... done
+myst v2.0.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'dollarmath', 'amsmath'}, disable_syntax=[], all_links_external=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_transition=False, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 47 source files that are out of date
+updating environment: [new config] 47 added, 0 changed, 0 removed
+[2Kreading sources... [  2%] 1_getstarted/getstarted_data
+[2Kreading sources... [  4%] 1_getstarted/getstarted_eval
+[2Kreading sources... [  6%] 1_getstarted/getstarted_install
+[2Kreading sources... [  9%] 1_getstarted/getstarted_navigate
+[2Kreading sources... [ 11%] 2_eval_generic/eval_4DVarNet
+[2Kreading sources... [ 13%] 2_eval_generic/eval_BFNQG
+[2Kreading sources... [ 15%] 2_eval_generic/eval_DUACS
+[2Kreading sources... [ 17%] 2_eval_generic/eval_MIOST
+[2Kreading sources... [ 19%] 2_eval_generic/eval_overall
+[2Kreading sources... [ 21%] 5_metrics_det/metrics_alongdrifter
+[2Kreading sources... [ 23%] 5_metrics_det/metrics_alongtrack
+[2Kreading sources... [ 26%] 5_metrics_det/metrics_driftertraj
+[2Kreading sources... [ 28%] 6_scripts/mod_compare
+[2Kreading sources... [ 30%] 6_scripts/mod_filter
+[2Kreading sources... [ 32%] 6_scripts/mod_interp
+[2Kreading sources... [ 34%] 6_scripts/mod_plot
+[2Kreading sources... [ 36%] 6_scripts/mod_powerspec
+[2Kreading sources... [ 38%] 6_scripts/mod_read
+[2Kreading sources... [ 40%] 6_scripts/mod_spectral
+[2Kreading sources... [ 43%] 6_scripts/mod_stat
+[2Kreading sources... [ 45%] 6_scripts/mod_switchvar
+[2Kreading sources... [ 47%] 6_scripts/mod_traj
+[2Kreading sources... [ 49%] 6_scripts/mod_utils
+[2Kreading sources... [ 51%] 6_scripts/mod_xscale
+[2Kreading sources... [ 53%] 6_scripts/modules
+[2Kreading sources... [ 55%] gallery/alongtrack_spectral_description
+[2Kreading sources... [ 57%] gallery/alongtrack_statistics_description
+[2Kreading sources... [ 60%] gallery/compare_stat_to_duacs
+[2Kreading sources... [ 62%] gallery/compare_stat_to_duacs_GS
+[2Kreading sources... [ 64%] gallery/download_and_acces_global_data
+[2Kreading sources... [ 66%] gallery/download_and_open_data
+[2Kreading sources... [ 68%] gallery/read_and_download_regional_data
+[2Kreading sources... [ 70%] gallery/ssh_scores_DUACS_geos
+[2Kreading sources... [ 72%] gallery/ssh_scores_DUACS_geos_GS
+[2Kreading sources... [ 74%] gallery/ssh_scores_MIOST_geos
+[2Kreading sources... [ 77%] gallery/ssh_scores_MIOST_geos_barotrop_eqwaves
+[2Kreading sources... [ 79%] gallery/uv_scores_DUACS_geos
+[2Kreading sources... [ 81%] gallery/uv_scores_DUACS_geos_GS
+[2Kreading sources... [ 83%] gallery/uv_scores_GLORYS12v1
+[2Kreading sources... [ 85%] gallery/uv_scores_MIOST_geos
+[2Kreading sources... [ 87%] gallery/uv_scores_MIOST_geos_barotrop_eqwaves
+[2Kreading sources... [ 89%] gallery/uv_scores_WOC
+[2Kreading sources... [ 91%] gallery/uv_traj_DUACS_NAtl
+[2Kreading sources... [ 94%] gallery/uv_traj_DUACS_global
+[2Kreading sources... [ 96%] gallery/uv_traj_MIOST_NAtl
+[2Kreading sources... [ 98%] gallery/uv_traj_WOC_NAtl
+[2Kreading sources... [100%] index
+/home/docs/checkouts/readthedocs.org/user_builds/2024c-dc-4dmedsea-esa/checkouts/latest/docs/source/gallery/uv_traj_WOC_NAtl.ipynb:2112: WARNING: Explicit markup ends without a blank line; unexpected unindent.
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+copying assets... copying static files... done
+copying extra files... done
+done
+[2Kwriting output... [  2%] 1_getstarted/getstarted_data
+[2Kwriting output... [  4%] 1_getstarted/getstarted_eval
+[2Kwriting output... [  6%] 1_getstarted/getstarted_install
+[2Kwriting output... [  9%] 1_getstarted/getstarted_navigate
+[2Kwriting output... [ 11%] 2_eval_generic/eval_4DVarNet
+[2Kwriting output... [ 13%] 2_eval_generic/eval_BFNQG
+[2Kwriting output... [ 15%] 2_eval_generic/eval_DUACS
+[2Kwriting output... [ 17%] 2_eval_generic/eval_MIOST
+[2Kwriting output... [ 19%] 2_eval_generic/eval_overall
+[2Kwriting output... [ 21%] 5_metrics_det/metrics_alongdrifter
+[2Kwriting output... [ 23%] 5_metrics_det/metrics_alongtrack
+[2Kwriting output... [ 26%] 5_metrics_det/metrics_driftertraj
+[2Kwriting output... [ 28%] 6_scripts/mod_compare
+[2Kwriting output... [ 30%] 6_scripts/mod_filter
+[2Kwriting output... [ 32%] 6_scripts/mod_interp
+[2Kwriting output... [ 34%] 6_scripts/mod_plot
+[2Kwriting output... [ 36%] 6_scripts/mod_powerspec
+[2Kwriting output... [ 38%] 6_scripts/mod_read
+[2Kwriting output... [ 40%] 6_scripts/mod_spectral
+[2Kwriting output... [ 43%] 6_scripts/mod_stat
+[2Kwriting output... [ 45%] 6_scripts/mod_switchvar
+[2Kwriting output... [ 47%] 6_scripts/mod_traj
+[2Kwriting output... [ 49%] 6_scripts/mod_utils
+[2Kwriting output... [ 51%] 6_scripts/mod_xscale
+[2Kwriting output... [ 53%] 6_scripts/modules
+[2Kwriting output... [ 55%] gallery/alongtrack_spectral_description
+[2Kwriting output... [ 57%] gallery/alongtrack_statistics_description
+[2Kwriting output... [ 60%] gallery/compare_stat_to_duacs
+[2Kwriting output... [ 62%] gallery/compare_stat_to_duacs_GS
+[2Kwriting output... [ 64%] gallery/download_and_acces_global_data
+[2Kwriting output... [ 66%] gallery/download_and_open_data
+[2Kwriting output... [ 68%] gallery/read_and_download_regional_data
+[2Kwriting output... [ 70%] gallery/ssh_scores_DUACS_geos
+[2Kwriting output... [ 72%] gallery/ssh_scores_DUACS_geos_GS
+[2Kwriting output... [ 74%] gallery/ssh_scores_MIOST_geos
+[2Kwriting output... [ 77%] gallery/ssh_scores_MIOST_geos_barotrop_eqwaves
+[2Kwriting output... [ 79%] gallery/uv_scores_DUACS_geos
+[2Kwriting output... [ 81%] gallery/uv_scores_DUACS_geos_GS
+[2Kwriting output... [ 83%] gallery/uv_scores_GLORYS12v1
+[2Kwriting output... [ 85%] gallery/uv_scores_MIOST_geos
+[2Kwriting output... [ 87%] gallery/uv_scores_MIOST_geos_barotrop_eqwaves
+[2Kwriting output... [ 89%] gallery/uv_scores_WOC
+[2Kwriting output... [ 91%] gallery/uv_traj_DUACS_NAtl
+[2Kwriting output... [ 94%] gallery/uv_traj_DUACS_global
+[2Kwriting output... [ 96%] gallery/uv_traj_MIOST_NAtl
+[2Kwriting output... [ 98%] gallery/uv_traj_WOC_NAtl
+[2Kwriting output... [100%] index
+generating indices... genindex py-modindex done
+copying linked files... 
+[2Kcopying notebooks ... [  5%] gallery/alongtrack_spectral_description.ipynb
+[2Kcopying notebooks ... [ 10%] gallery/alongtrack_statistics_description.ipynb
+[2Kcopying notebooks ... [ 14%] gallery/compare_stat_to_duacs.ipynb
+[2Kcopying notebooks ... [ 19%] gallery/compare_stat_to_duacs_GS.ipynb
+[2Kcopying notebooks ... [ 24%] gallery/download_and_acces_global_data.ipynb
+[2Kcopying notebooks ... [ 29%] gallery/download_and_open_data.ipynb
+[2Kcopying notebooks ... [ 33%] gallery/read_and_download_regional_data.ipynb
+[2Kcopying notebooks ... [ 38%] gallery/ssh_scores_DUACS_geos.ipynb
+[2Kcopying notebooks ... [ 43%] gallery/ssh_scores_DUACS_geos_GS.ipynb
+[2Kcopying notebooks ... [ 48%] gallery/ssh_scores_MIOST_geos.ipynb
+[2Kcopying notebooks ... [ 52%] gallery/ssh_scores_MIOST_geos_barotrop_eqwaves.ipynb
+[2Kcopying notebooks ... [ 57%] gallery/uv_scores_DUACS_geos.ipynb
+[2Kcopying notebooks ... [ 62%] gallery/uv_scores_DUACS_geos_GS.ipynb
+[2Kcopying notebooks ... [ 67%] gallery/uv_scores_GLORYS12v1.ipynb
+[2Kcopying notebooks ... [ 71%] gallery/uv_scores_MIOST_geos.ipynb
+[2Kcopying notebooks ... [ 76%] gallery/uv_scores_MIOST_geos_barotrop_eqwaves.ipynb
+[2Kcopying notebooks ... [ 81%] gallery/uv_scores_WOC.ipynb
+[2Kcopying notebooks ... [ 86%] gallery/uv_traj_DUACS_NAtl.ipynb
+[2Kcopying notebooks ... [ 90%] gallery/uv_traj_DUACS_global.ipynb
+[2Kcopying notebooks ... [ 95%] gallery/uv_traj_MIOST_NAtl.ipynb
+[2Kcopying notebooks ... [100%] gallery/uv_traj_WOC_NAtl.ipynb
+writing additional pages... search done
+[2Kcopying images... [  1%] figures/Maps_format_SLA.png
+[2Kcopying images... [  2%] figures/Maps_format_Currents.png
+[2Kcopying images... [  2%] _static/temporal_rmse_sla_4DVarNet.png
+[2Kcopying images... [  3%] _static/temporal_rmse_uv_4DVarNet.png
+[2Kcopying images... [  4%] _static/Maps_4DVarNet_errvar_4DMedSea.png
+[2Kcopying images... [  5%] _static/Maps_4DVarNet_explvar_4DMedSea.png
+[2Kcopying images... [  5%] _static/psd_average_4DVarNet.png
+[2Kcopying images... [  6%] _static/nsr_average_4DVarNet.png
+[2Kcopying images... [  7%] _static/Maps_4DVarNet_effres_4DMedSea.png
+[2Kcopying images... [  8%] _static/deviation_maps_4DVarNet_h1.png
+[2Kcopying images... [  9%] _static/deviation_maps_4DVarNet_h2.png
+[2Kcopying images... [  9%] _static/deviation_maps_4DVarNet_h3.png
+[2Kcopying images... [ 10%] _static/deviation_maps_4DVarNet_h4.png
+[2Kcopying images... [ 11%] _static/deviation_maps_4DVarNet_h5.png
+[2Kcopying images... [ 12%] _static/temporal_rmse_duacs.png
+[2Kcopying images... [ 12%] _static/temporal_rmse_uv_duacs.png
+[2Kcopying images... [ 13%] _static/Maps_duacs_errvar_4DMedSea.png
+[2Kcopying images... [ 14%] _static/Maps_duacs_explvar_4DMedSea.png
+[2Kcopying images... [ 15%] _static/psd_average_DUACS-allsat.png
+[2Kcopying images... [ 16%] _static/nsr_average_DUACS-allsat.png
+[2Kcopying images... [ 16%] _static/Maps_DUACS-allsat_effres_4DMedSea.png
+[2Kcopying images... [ 17%] _static/deviation_maps_DUACS-allsat_h1.png
+[2Kcopying images... [ 18%] _static/deviation_maps_DUACS-allsat_h2.png
+[2Kcopying images... [ 19%] _static/deviation_maps_DUACS-allsat_h3.png
+[2Kcopying images... [ 19%] _static/deviation_maps_DUACS-allsat_h4.png
+[2Kcopying images... [ 20%] _static/deviation_maps_DUACS-allsat_h5.png
+[2Kcopying images... [ 21%] _static/temporal_rmse_MIOST.png
+[2Kcopying images... [ 22%] _static/temporal_rmse_uv_miost.png
+[2Kcopying images... [ 22%] _static/Maps_miost_errvar_4DMedSea.png
+[2Kcopying images... [ 23%] _static/Maps_miost_explvar_4DMedSea.png
+[2Kcopying images... [ 24%] _static/psd_average_MIOST.png
+[2Kcopying images... [ 25%] _static/nsr_average_MIOST.png
+[2Kcopying images... [ 26%] _static/Maps_miost_effres_4DMedSea.png
+[2Kcopying images... [ 26%] _static/deviation_maps_MIOST_h1.png
+[2Kcopying images... [ 27%] _static/deviation_maps_MIOST_h2.png
+[2Kcopying images... [ 28%] _static/deviation_maps_MIOST_h3.png
+[2Kcopying images... [ 29%] _static/deviation_maps_MIOST_h4.png
+[2Kcopying images... [ 29%] _static/deviation_maps_MIOST_h5.png
+[2Kcopying images... [ 30%] _static/temporal_rmse_sla_comparison.png
+[2Kcopying images... [ 31%] _static/psd_average_comparison.png
+[2Kcopying images... [ 32%] _static/nsr_average_comparison.png
+[2Kcopying images... [ 33%] _static/temporal_rmse_uv_comparison.png
+[2Kcopying images... [ 33%] _static/deviation_horizon_allbasins.png
+[2Kcopying images... [ 34%] figures/Maps_DUACS_errvar_glob_uv.png
+[2Kcopying images... [ 35%] figures/Maps_DUACS_explvar_glob_uv.png
+[2Kcopying images... [ 36%] figures/Maps_DUACS_effres_glob_uv.png
+[2Kcopying images... [ 36%] figures/Maps_DUACS_errvar_glob.png
+[2Kcopying images... [ 37%] figures/Maps_DUACS_explvar_glob.png
+[2Kcopying images... [ 38%] figures/Maps_DUACS_effres_glob.png
+[2Kcopying images... [ 39%] figures/deviation_maps_DUACS_global_h5.png
+[2Kcopying images... [ 40%] figures/deviation_horizon_global.png
+[2Kcopying images... [ 40%] figures/logos_partenaires._cmems_se.jpg
+[2Kcopying images... [ 41%] _build/doctrees/nbsphinx/gallery_alongtrack_spectral_description_17_0.png
+[2Kcopying images... [ 42%] _build/doctrees/nbsphinx/gallery_alongtrack_statistics_description_18_0.png
+[2Kcopying images... [ 43%] _build/doctrees/nbsphinx/gallery_alongtrack_statistics_description_18_1.png
+[2Kcopying images... [ 43%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_10_0.png
+[2Kcopying images... [ 44%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_11_0.png
+[2Kcopying images... [ 45%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_13_0.png
+[2Kcopying images... [ 46%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_18_0.png
+[2Kcopying images... [ 47%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_19_0.png
+[2Kcopying images... [ 47%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_21_0.png
+[2Kcopying images... [ 48%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_24_0.png
+[2Kcopying images... [ 49%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_25_0.png
+[2Kcopying images... [ 50%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_27_0.png
+[2Kcopying images... [ 50%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_10_0.png
+[2Kcopying images... [ 51%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_11_0.png
+[2Kcopying images... [ 52%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_13_0.png
+[2Kcopying images... [ 53%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_18_0.png
+[2Kcopying images... [ 53%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_19_0.png
+[2Kcopying images... [ 54%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_21_0.png
+[2Kcopying images... [ 55%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_24_0.png
+[2Kcopying images... [ 56%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_25_0.png
+[2Kcopying images... [ 57%] _build/doctrees/nbsphinx/gallery_compare_stat_to_duacs_GS_27_0.png
+[2Kcopying images... [ 57%] _static/dc_2024_4dmedsea_banner.jpg
+[2Kcopying images... [ 58%] _build/doctrees/nbsphinx/gallery_ssh_scores_DUACS_geos_19_0.png
+[2Kcopying images... [ 59%] _build/doctrees/nbsphinx/gallery_ssh_scores_DUACS_geos_19_1.png
+[2Kcopying images... [ 60%] _build/doctrees/nbsphinx/gallery_ssh_scores_DUACS_geos_24_0.png
+[2Kcopying images... [ 60%] _build/doctrees/nbsphinx/gallery_ssh_scores_DUACS_geos_GS_19_0.png
+[2Kcopying images... [ 61%] _build/doctrees/nbsphinx/gallery_ssh_scores_DUACS_geos_GS_19_1.png
+[2Kcopying images... [ 62%] _build/doctrees/nbsphinx/gallery_ssh_scores_DUACS_geos_GS_24_0.png
+[2Kcopying images... [ 63%] _build/doctrees/nbsphinx/gallery_ssh_scores_MIOST_geos_19_0.png
+[2Kcopying images... [ 64%] _build/doctrees/nbsphinx/gallery_ssh_scores_MIOST_geos_25_0.png
+[2Kcopying images... [ 64%] _build/doctrees/nbsphinx/gallery_ssh_scores_MIOST_geos_barotrop_eqwaves_18_0.png
+[2Kcopying images... [ 65%] _build/doctrees/nbsphinx/gallery_ssh_scores_MIOST_geos_barotrop_eqwaves_18_1.png
+[2Kcopying images... [ 66%] _build/doctrees/nbsphinx/gallery_ssh_scores_MIOST_geos_barotrop_eqwaves_23_0.png
+[2Kcopying images... [ 67%] _build/doctrees/nbsphinx/gallery_uv_scores_DUACS_geos_21_0.png
+[2Kcopying images... [ 67%] _build/doctrees/nbsphinx/gallery_uv_scores_DUACS_geos_21_1.png
+[2Kcopying images... [ 68%] _build/doctrees/nbsphinx/gallery_uv_scores_DUACS_geos_GS_20_0.png
+[2Kcopying images... [ 69%] _build/doctrees/nbsphinx/gallery_uv_scores_DUACS_geos_GS_20_1.png
+[2Kcopying images... [ 70%] _build/doctrees/nbsphinx/gallery_uv_scores_DUACS_geos_GS_25_0.png
+[2Kcopying images... [ 71%] _build/doctrees/nbsphinx/gallery_uv_scores_GLORYS12v1_19_0.png
+[2Kcopying images... [ 71%] _build/doctrees/nbsphinx/gallery_uv_scores_GLORYS12v1_25_0.png
+[2Kcopying images... [ 72%] _build/doctrees/nbsphinx/gallery_uv_scores_MIOST_geos_19_0.png
+[2Kcopying images... [ 73%] _build/doctrees/nbsphinx/gallery_uv_scores_MIOST_geos_19_1.png
+[2Kcopying images... [ 74%] _build/doctrees/nbsphinx/gallery_uv_scores_MIOST_geos_24_0.png
+[2Kcopying images... [ 74%] _build/doctrees/nbsphinx/gallery_uv_scores_MIOST_geos_barotrop_eqwaves_19_0.png
+[2Kcopying images... [ 75%] _build/doctrees/nbsphinx/gallery_uv_scores_MIOST_geos_barotrop_eqwaves_24_0.png
+[2Kcopying images... [ 76%] _build/doctrees/nbsphinx/gallery_uv_scores_WOC_19_0.png
+[2Kcopying images... [ 77%] _build/doctrees/nbsphinx/gallery_uv_scores_WOC_25_0.png
+[2Kcopying images... [ 78%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_NAtl_27_0.png
+[2Kcopying images... [ 78%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_NAtl_27_1.png
+[2Kcopying images... [ 79%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_NAtl_27_2.png
+[2Kcopying images... [ 80%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_NAtl_27_3.png
+[2Kcopying images... [ 81%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_NAtl_27_4.png
+[2Kcopying images... [ 81%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_NAtl_29_0.png
+[2Kcopying images... [ 82%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_NAtl_30_0.png
+[2Kcopying images... [ 83%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_global_27_0.png
+[2Kcopying images... [ 84%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_global_27_1.png
+[2Kcopying images... [ 84%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_global_27_2.png
+[2Kcopying images... [ 85%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_global_27_3.png
+[2Kcopying images... [ 86%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_global_27_4.png
+[2Kcopying images... [ 87%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_global_29_0.png
+[2Kcopying images... [ 88%] _build/doctrees/nbsphinx/gallery_uv_traj_DUACS_global_30_0.png
+[2Kcopying images... [ 88%] _build/doctrees/nbsphinx/gallery_uv_traj_MIOST_NAtl_27_0.png
+[2Kcopying images... [ 89%] _build/doctrees/nbsphinx/gallery_uv_traj_MIOST_NAtl_27_1.png
+[2Kcopying images... [ 90%] _build/doctrees/nbsphinx/gallery_uv_traj_MIOST_NAtl_27_2.png
+[2Kcopying images... [ 91%] _build/doctrees/nbsphinx/gallery_uv_traj_MIOST_NAtl_27_3.png
+[2Kcopying images... [ 91%] _build/doctrees/nbsphinx/gallery_uv_traj_MIOST_NAtl_27_4.png
+[2Kcopying images... [ 92%] _build/doctrees/nbsphinx/gallery_uv_traj_MIOST_NAtl_29_0.png
+[2Kcopying images... [ 93%] _build/doctrees/nbsphinx/gallery_uv_traj_MIOST_NAtl_30_0.png
+[2Kcopying images... [ 94%] _build/doctrees/nbsphinx/gallery_uv_traj_WOC_NAtl_27_0.png
+[2Kcopying images... [ 95%] _build/doctrees/nbsphinx/gallery_uv_traj_WOC_NAtl_27_1.png
+[2Kcopying images... [ 95%] _build/doctrees/nbsphinx/gallery_uv_traj_WOC_NAtl_27_2.png
+[2Kcopying images... [ 96%] _build/doctrees/nbsphinx/gallery_uv_traj_WOC_NAtl_27_3.png
+[2Kcopying images... [ 97%] _build/doctrees/nbsphinx/gallery_uv_traj_WOC_NAtl_27_4.png
+[2Kcopying images... [ 98%] _build/doctrees/nbsphinx/gallery_uv_traj_WOC_NAtl_29_0.png
+[2Kcopying images... [ 98%] _build/doctrees/nbsphinx/gallery_uv_traj_WOC_NAtl_30_0.png
+[2Kcopying images... [ 99%] ../../figures/dc_2024_4dmedsea_banner.jpg
+[2Kcopying images... [100%] _static/DC_4DMedSea_IllustrationMap.png
+dumping search index in English (code: en)... done
+dumping object inventory... done
+Updating searchtools for Read the Docs search... build finished with problems, 1 warning.
