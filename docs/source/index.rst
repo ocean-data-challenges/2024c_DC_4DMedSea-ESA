@@ -118,13 +118,32 @@ Check Metrics Details:
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Generic evaluation
 
    2_eval_generic/eval_overall.md
+   
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   :caption: CMEMS product
+ 
    2_eval_generic/eval_DUACS.md
+   
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   :caption: 4DMedSea methods
+  
    2_eval_generic/eval_MIOST.md
    2_eval_generic/eval_4DVarNet.md
+   
+   
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   :caption: Other methods
+  
    2_eval_generic/eval_BFNQG.md
  
   

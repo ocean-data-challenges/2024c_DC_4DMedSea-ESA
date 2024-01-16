@@ -1,4 +1,4 @@
-# DUACS
+# DUACS -- all sat
 
 <br>
  
@@ -18,31 +18,31 @@
 
 - **SSH**
 
-![temporal_rmse_DUACS](../_static/temporal_rmse_duacs.png)  
+![temporal_rmse_DUACS-allsat](../_static/temporal_rmse_duacs.png)  
 
 - **Currents**
 
-![temporal_rmse_uv_DUACS](../_static/temporal_rmse_uv_duacs.png)  
+![temporal_rmse_uv_DUACS-allsat](../_static/temporal_rmse_uv_duacs.png)  
  
 <br>
 
 
 ## Error variance 
 
-![Maps_duacs_errvar_4DMedSea](../_static/Maps_duacs_errvar_4DMedSea.png)  
+![Maps_DUACS-allsat_errvar_4DMedSea](../_static/Maps_duacs_errvar_4DMedSea.png)  
 
 <br>
 
 ## Explained variance 
 
-![Maps_duacs_explvar_4DMedSea](../_static/Maps_duacs_explvar_4DMedSea.png)  
+![Maps_DUACS-allsat_explvar_4DMedSea](../_static/Maps_duacs_explvar_4DMedSea.png)  
 
 <br>
 
 ##  Averaged  alongtrack spectral scores
 
 
-|![psd_average_MIOST](../_static/psd_average_DUACS.png) |  ![nsr_average_MIOST](../_static/nsr_average_DUACS.png)|
+|![psd_average_DUACS-allsat](../_static/psd_average_DUACS-allsat.png) |  ![nsr_average_DUACS-allsat](../_static/nsr_average_DUACS-allsat.png)|
 | -- | -- |
 
  
@@ -52,13 +52,17 @@
 
 - **Total effective resolution = 103.0 km**
 
-![Maps_duacs_effres_4DMedSea](../_static/Maps_duacs_effres_4DMedSea.png) 
+![Maps_DUACS-allsat_effres_4DMedSea](../_static/Maps_DUACS-allsat_effres_4DMedSea.png) 
  
 <br>  
 
 ## Lagrangian cumulative distance 
 
-| ![DUACS LDC h1](../_static/deviation_maps_DUACS_h1.png) | ![DUACS LDC h2](../_static/deviation_maps_DUACS_h2.png) | ![DUACS LDC h3](../_static/deviation_maps_DUACS_h3.png) | ![DUACS LDC h4](../_static/deviation_maps_DUACS_h4.png) | ![DUACS LDC h5](../_static/deviation_maps_DUACS_h5.png) |
-|--|--|--|--|--|
+|![DUACS-allsat LDC h1](../_static/deviation_maps_DUACS-allsat_h1.png) |
+|--|
+|![DUACS-allsat LDC h2](../_static/deviation_maps_DUACS-allsat_h2.png) | 
+|![DUACS-allsat LDC h3](../_static/deviation_maps_DUACS-allsat_h3.png) | 
+|![DUACS-allsat LDC h4](../_static/deviation_maps_DUACS-allsat_h4.png) | 
+|![DUACS-allsat LDC h5](../_static/deviation_maps_DUACS-allsat_h5.png) |
 
 <br>  

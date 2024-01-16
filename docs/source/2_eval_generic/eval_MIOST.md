@@ -1,4 +1,4 @@
-# MIOST
+# MIOST 
 
 <br>
  
@@ -33,7 +33,7 @@
 
 ## Explained variance 
 
-![Maps_duacs_explvar_4DMedSea](../_static/Maps_duacs_explvar_4DMedSea.png)  
+![Maps_duacs_explvar_4DMedSea](../_static/Maps_miost_explvar_4DMedSea.png)  
 
 
  
@@ -55,3 +55,16 @@
 
 ![Maps_miost_effres_4DMedSea](../_static/Maps_miost_effres_4DMedSea.png) 
  
+ 
+<br>  
+
+## Lagrangian cumulative distance 
+
+| ![MIOST LDC h1](../_static/deviation_maps_MIOST_h1.png) |
+|--|
+| ![MIOST LDC h2](../_static/deviation_maps_MIOST_h2.png) |
+| ![MIOST LDC h3](../_static/deviation_maps_MIOST_h3.png) |
+| ![MIOST LDC h4](../_static/deviation_maps_MIOST_h4.png) |
+| ![MIOST LDC h5](../_static/deviation_maps_MIOST_h5.png) | 
+
+<br>  
