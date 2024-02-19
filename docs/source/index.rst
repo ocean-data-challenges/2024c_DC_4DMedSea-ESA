@@ -130,7 +130,7 @@ Scoreboard
               <th>RMSE(u)</th>
               <th>RMSE score(u)</th>
               <th>RMSE(v)</th>
-              <th>RMSE score(v)</th>
+              <th>RMSE score(v)</th> 
             </tr>
           </thead>
           <tbody>  
