@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,10 +18,11 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="_static/js/custom.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation" href="1_getstarted/getstarted_install.html" />
+    <link rel="next" title="More information" href="0_projectinfo/projectinfo.html" />
     <link href="_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -45,12 +47,16 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">The 4DMedSea project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="0_projectinfo/projectinfo.html">More information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_navigate.html">Navigate the GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_eval.html">Evaluate your own maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_eval.html">Input specifications</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Overall comparison</span></p>
 <ul>
@@ -129,20 +135,144 @@
 
 <br />
 
-</embed><section id="the-4dmedsea-project">
-<h2>The 4DMedSea project<a class="headerlink" href="#the-4dmedsea-project" title="Permalink to this headline"></a></h2>
-<p>This ITT is part of the ESA Mediterranean Regional Initiative aimed at exploring and exploiting the huge synergistic opportunities offered by the increasing EO European satellite capacity together with in-situ observations, advanced models and novel technologies (AI, ICTs, cloud computing capacity, HPCs) to enhance observations over the Mediterranean region, advance the scientific understanding of the role of the Mediterranean area in the Earth and climate system and transfer that knowledge into new solutions for society.In addition, this activity makes part of the ESA Ocean Science Cluster and contributes to the joint EC-ESA Earth System Science Initiative launched in February 2020 by the European Space Agency and the European Commission (EC) Directorate-General for Research and Innovation (DG RTD) to jointly advance Earth System Science and its response to the global challenges that society is facing in the onset of this century. In particular, this activity is a contribution to the EC-ESA Flagship Action on Ocean Health aimed at developing advanced ocean observations and products and enhancing the scientific understanding of the ocean’s role in the Earth and climate system and its responses to management actions to contribute to reverse the cycle of decline in ocean health and improve conditions for sustainable development of the Ocean.</p>
-<a class="reference internal image-reference" href="_images/DC_4DMedSea_IllustrationMap.png"><img alt="_images/DC_4DMedSea_IllustrationMap.png" class="align-center" src="_images/DC_4DMedSea_IllustrationMap.png" style="width: 500px;" /></a>
-<p>In that context, the overarching objectives of the 4DMED ITT are to exploit the synergy offered by the increasing EO European satellites together with in-situ observations, advanced physical/biogeochemical/ecological models and novel technologies to develop a data-driven, 4D reconstruction of the Mediterranean Sea physical and biogeochemical state, exploit this information to further improve our understanding of the complex interactions between physical and biological processes at a broad range of temporal and spatial scales and explore options to transfer that knowledge into new solutions for society regarding the monitoring, restoration and preservation of the Mediterranean Sea Health.</p>
+</embed><section id="the-4dmedsea-data-challenge">
+<h2>The 4DMedSea Data Challenge<a class="headerlink" href="#the-4dmedsea-data-challenge" title="Permalink to this headline"></a></h2>
+<p>The 4DMedSea data challenge is a comparison platform that allow a sound and fair assessment of several mapping methods between in the West Mediterranean region. This platform offers an input dataset (altimetric data), for anyone to create sea level and surface current maps, as well as a reference dataset (independant from the input dataset) in order to evaluate the methods. The data challenge is hosted in a <a class="reference external" href="https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA">github repository</a> and its documentation and results are presented on this readthedocs website.</p>
+<p><span class="raw-html"><br /></span></p>
+<p><span class="raw-html"><hr /></span></p>
+<p><span class="raw-html"><br /></span></p>
 </section>
-<section id="the-data-challenge-setup">
-<h2>The Data Challenge Setup<a class="headerlink" href="#the-data-challenge-setup" title="Permalink to this headline"></a></h2>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline"></a></h2>
+<p>The goal of the data challenge is to evaluate the methods ability to map the sea level anomaly in the Western Mediterranean during the year 2017 (evaluation period).
+The input observations used to generate the maps are conventional altimeters (Saral/Altika, Jason-2, Jason-3, Sentinel-3A, Sentinel-3B, Sentinel-6, Haiyang-2B and Cryosat-2). The evaluation observations are from an independent conventional altimeter (Haiyang-2a) and drifters. The methods evaluated, so far, are MIOST and 4DVarNet. The DUACS-CMEMS product is also provided as a reference, however the DUACS product uses the independent altimeter data so the results provided should not be looked at as an assessment of the DUACS product performance.</p>
+<p>A dataset of input observations, evaluation observations and evaluated maps is provided (see <a class="reference external" href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/1_getstarted/getstarted_data.html">Download the data</a>).</p>
+<a class="reference internal image-reference" href="_images/DC_4DMedSea_IllustrationMap.png"><img alt="_images/DC_4DMedSea_IllustrationMap.png" class="align-center" src="_images/DC_4DMedSea_IllustrationMap.png" style="width: 500px;" /></a>
+<p><span class="raw-html"><br /></span></p>
+<p><span class="raw-html"><hr /></span></p>
+<p><span class="raw-html"><br /></span></p>
+</section>
+<section id="scoreboard">
+<h2>Scoreboard<a class="headerlink" href="#scoreboard" title="Permalink to this headline"></a></h2>
+<h3> 4DMedSea methods </h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>RMSE(SLA)</th>
+        <th>RMSE score(SLA)</th>
+        <th>Eff. res.(SLA)</th>
+        <th>RMSE(u)</th>
+        <th>RMSE score(u)</th>
+        <th>RMSE(v)</th>
+        <th>RMSE score(v)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">MIOST</a></strong></td>
+        <td>4.6 cm</td>
+        <td>55 % </td>
+        <td>121.3 km</td>
+        <td>12.8 cm/s</td>
+        <td>31 %</td>
+        <td>12.7 cm/s</td>
+        <td>29 %</td>
+      </tr>
+      <tr>
+        <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_miost.html">4DVarNet</a></strong></td>
+        <td>4.5 cm</td>
+        <td>56 %</td>
+        <td>144.1 km </td>
+        <td>13.2 cm/s</td>
+        <td>30 %</td>
+        <td>13.5 cm/s</td>
+        <td>25 %</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  </br>
+
+
+<h3> DUACS-CMEMS product (using all sat) </h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>RMSE(SLA)</th>
+        <th>RMSE score(SLA)</th>
+        <th>Eff. res.(SLA)</th>
+        <th>RMSE(u)</th>
+        <th>RMSE score(u)</th>
+        <th>RMSE(v)</th>
+        <th>RMSE score(v)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></strong></td>
+        <td>4.1 cm</td>
+        <td>63 %</td>
+        <td>103.0 km</td>
+        <td>12.1 cm/s</td>
+        <td>35 %</td>
+        <td>12.5 cm/s</td>
+        <td>31 %</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  </br>
+
+
+<h3> Other methods </h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>RMSE(SLA)</th>
+        <th>RMSE score(SLA)</th>
+        <th>Eff. res.(SLA)</th>
+        <th>RMSE(u)</th>
+        <th>RMSE score(u)</th>
+        <th>RMSE(v)</th>
+        <th>RMSE score(v)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">BFN-QG</a></strong></td>
+        <td> cm</td>
+        <td> %</td>
+        <td> km</td>
+        <td>  cm/s</td>
+        <td> %</td>
+        <td> cm/s</td>
+        <td> %</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  </br><p><span class="raw-html"><br /></span></p>
+<p><span class="raw-html"><hr /></span></p>
+<p><span class="raw-html"><br /></span></p>
+</section>
 <section id="reconstruction">
-<h3>Reconstruction<a class="headerlink" href="#reconstruction" title="Permalink to this headline"></a></h3>
+<h2>Reconstruction<a class="headerlink" href="#reconstruction" title="Permalink to this headline"></a></h2>
 <p>The reconstruction covers the period from <strong>January 1st, 2017 to December 31st, 2017</strong> in the Mediterranean basin from <strong>6°W to 36°E and 30°N to 46°N</strong>.</p>
+<p><span class="raw-html"><br /></span></p>
+<p><span class="raw-html"><hr /></span></p>
+<p><span class="raw-html"><br /></span></p>
 </section>
 <section id="observations">
-<h3>Observations<a class="headerlink" href="#observations" title="Permalink to this headline"></a></h3>
+<h2>Observations<a class="headerlink" href="#observations" title="Permalink to this headline"></a></h2>
 <p>The SSH observations used in this study comprise data from a nadir altimeter constellation that includes:</p>
 <ul class="simple">
 <li><p><strong>Saral/Altika (alg),</strong></p></li>
@@ -156,9 +286,12 @@
 </ul>
 <p>The <strong>Haiyang-2A (H2A)</strong> altimeter data are excluded from the mapping process to enable an independent assessment of the different reconstructions.</p>
 <p>These data are distributed by the Copernicus Marine Service <a class="reference external" href="https://doi.org/10.48670/moi-0014">https://doi.org/10.48670/moi-0014</a> .</p>
+<p><span class="raw-html"><br /></span></p>
+<p><span class="raw-html"><hr /></span></p>
+<p><span class="raw-html"><br /></span></p>
 </section>
 <section id="evaluation">
-<h3>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline"></a></h3>
+<h2>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline"></a></h2>
 <p><strong>Data</strong></p>
 <ul class="simple">
 <li><p>Independant nadir: Haiyang-2A (H2A)</p></li>
@@ -188,7 +321,8 @@
 </div>
 <div class="toctree-wrapper compound">
 </div>
-</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 </section>
 
@@ -196,7 +330,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="1_getstarted/getstarted_install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="0_projectinfo/projectinfo.html" class="btn btn-neutral float-right" title="More information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

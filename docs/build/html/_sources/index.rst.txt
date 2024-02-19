@@ -28,32 +28,184 @@
         
     </embed>
     
-    
-
-The 4DMedSea project
-====================
-
+     
  
 
-This ITT is part of the ESA Mediterranean Regional Initiative aimed at exploring and exploiting the huge synergistic opportunities offered by the increasing EO European satellite capacity together with in-situ observations, advanced models and novel technologies (AI, ICTs, cloud computing capacity, HPCs) to enhance observations over the Mediterranean region, advance the scientific understanding of the role of the Mediterranean area in the Earth and climate system and transfer that knowledge into new solutions for society.In addition, this activity makes part of the ESA Ocean Science Cluster and contributes to the joint EC-ESA Earth System Science Initiative launched in February 2020 by the European Space Agency and the European Commission (EC) Directorate-General for Research and Innovation (DG RTD) to jointly advance Earth System Science and its response to the global challenges that society is facing in the onset of this century. In particular, this activity is a contribution to the EC-ESA Flagship Action on Ocean Health aimed at developing advanced ocean observations and products and enhancing the scientific understanding of the ocean's role in the Earth and climate system and its responses to management actions to contribute to reverse the cycle of decline in ocean health and improve conditions for sustainable development of the Ocean. 
+The 4DMedSea Data Challenge
+===========================
+
+
+The 4DMedSea data challenge is a comparison platform that allow a sound and fair assessment of several mapping methods between in the West Mediterranean region. This platform offers an input dataset (altimetric data), for anyone to create sea level and surface current maps, as well as a reference dataset (independant from the input dataset) in order to evaluate the methods. The data challenge is hosted in a `github repository <https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA>`_ and its documentation and results are presented on this readthedocs website. 
+
+        
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
+
+:raw-html:`<br />` 
+
+ 
+Objectives
+==========
+
+The goal of the data challenge is to evaluate the methods ability to map the sea level anomaly in the Western Mediterranean during the year 2017 (evaluation period). 
+The input observations used to generate the maps are conventional altimeters (Saral/Altika, Jason-2, Jason-3, Sentinel-3A, Sentinel-3B, Sentinel-6, Haiyang-2B and Cryosat-2). The evaluation observations are from an independent conventional altimeter (Haiyang-2a) and drifters. The methods evaluated, so far, are MIOST and 4DVarNet. The DUACS-CMEMS product is also provided as a reference, however the DUACS product uses the independent altimeter data so the results provided should not be looked at as an assessment of the DUACS product performance. 
+
+A dataset of input observations, evaluation observations and evaluated maps is provided (see `Download the data <https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/1_getstarted/getstarted_data.html>`_).
+  
+ 
  
 .. image:: _static/DC_4DMedSea_IllustrationMap.png
     :width: 500
     :align: center
+    
+    
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
+
+:raw-html:`<br />`  
 
 
-In that context, the overarching objectives of the 4DMED ITT are to exploit the synergy offered by the increasing EO European satellites together with in-situ observations, advanced physical/biogeochemical/ecological models and novel technologies to develop a data-driven, 4D reconstruction of the Mediterranean Sea physical and biogeochemical state, exploit this information to further improve our understanding of the complex interactions between physical and biological processes at a broad range of temporal and spatial scales and explore options to transfer that knowledge into new solutions for society regarding the monitoring, restoration and preservation of the Mediterranean Sea Health.
+Scoreboard
+==========
 
-The Data Challenge Setup
-========================
+.. raw:: html   
+
+
+      <h3> 4DMedSea methods </h3>   
+
+        <table>
+          <thead>
+            <tr> 
+              <th></th>
+              <th>RMSE(SLA)</th>
+              <th>RMSE score(SLA)</th>
+              <th>Eff. res.(SLA)</th>
+              <th>RMSE(u)</th>
+              <th>RMSE score(u)</th>
+              <th>RMSE(v)</th>
+              <th>RMSE score(v)</th>
+            </tr>
+          </thead>
+          <tbody>  
+            <tr> 
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">MIOST</a></strong></td>
+              <td>4.6 cm</td>
+              <td>55 % </td>
+              <td>121.3 km</td>
+              <td>12.8 cm/s</td>
+              <td>31 %</td> 
+              <td>12.7 cm/s</td>
+              <td>29 %</td> 
+            </tr>
+            <tr> 
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_miost.html">4DVarNet</a></strong></td>
+              <td>4.5 cm</td>
+              <td>56 %</td>
+              <td>144.1 km </td>
+              <td>13.2 cm/s</td>
+              <td>30 %</td> 
+              <td>13.5 cm/s</td>
+              <td>25 %</td> 
+            </tr> 
+          </tbody>
+        </table>
+        
+        
+        </br>
+        
+
+      <h3> DUACS-CMEMS product (using all sat) </h3>   
+
+        <table>
+          <thead>
+            <tr> 
+              <th></th>
+              <th>RMSE(SLA)</th>
+              <th>RMSE score(SLA)</th>
+              <th>Eff. res.(SLA)</th>
+              <th>RMSE(u)</th>
+              <th>RMSE score(u)</th>
+              <th>RMSE(v)</th>
+              <th>RMSE score(v)</th>
+            </tr>
+          </thead>
+          <tbody>  
+            <tr> 
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></strong></td>
+              <td>4.1 cm</td>
+              <td>63 %</td>
+              <td>103.0 km</td>
+              <td>12.1 cm/s</td>
+              <td>35 %</td> 
+              <td>12.5 cm/s</td>
+              <td>31 %</td> 
+            </tr> 
+          </tbody>
+        </table>
+        
+        
+        </br>
+        
+
+      <h3> Other methods </h3>   
+
+        <table>
+          <thead>
+            <tr> 
+              <th></th>
+              <th>RMSE(SLA)</th>
+              <th>RMSE score(SLA)</th>
+              <th>Eff. res.(SLA)</th>
+              <th>RMSE(u)</th>
+              <th>RMSE score(u)</th>
+              <th>RMSE(v)</th>
+              <th>RMSE score(v)</th>
+            </tr>
+          </thead>
+          <tbody>  
+            <tr> 
+              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">BFN-QG</a></strong></td>
+              <td> cm</td>
+              <td> %</td>
+              <td> km</td>
+              <td>  cm/s</td>
+              <td> %</td> 
+              <td> cm/s</td>
+              <td> %</td> 
+            </tr> 
+          </tbody>
+        </table>
+        
+        
+        </br>
+    
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
+
+:raw-html:`<br />`  
+
  
 Reconstruction 
---------------
+==============
 
 The reconstruction covers the period from **January 1st, 2017 to December 31st, 2017** in the Mediterranean basin from **6°W to 36°E and 30°N to 46°N**.
 
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
+
+:raw-html:`<br />`  
+
+
 Observations
-------------
+============
 
 The SSH observations used in this study comprise data from a nadir altimeter constellation that includes:
 
@@ -77,9 +229,19 @@ The **Haiyang-2A (H2A)** altimeter data are excluded from the mapping process to
 
 These data are distributed by the Copernicus Marine Service https://doi.org/10.48670/moi-0014 .
 
+    
+    
+
+:raw-html:`<br />` 
+     
+:raw-html:`<hr />` 
+
+:raw-html:`<br />`  
+ 
+
   
 Evaluation
-----------
+==========
 
 **Data**
 
@@ -105,6 +267,13 @@ Check Metrics Details:
 
 :raw-html:`<br />`
  
+    
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: The 4DMedSea project
+
+   0_projectinfo/projectinfo.md
     
 .. toctree::
    :hidden:

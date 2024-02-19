@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,6 +18,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../_static/js/custom.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -46,19 +48,35 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">The 4DMedSea project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_projectinfo/projectinfo.html">More information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_navigate.html">Navigate the GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Evaluate your own maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_getstarted/getstarted_eval.html">Input specifications</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Generic evaluation</span></p>
+<p class="caption" role="heading"><span class="caption-text">Overall comparison</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_overall.html">Overall evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_DUACS.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_movies.html">Movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_scores.html">Scores overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_nadireval.html">Independant nadir evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_driftereval.html">Independant drifter evaluation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CMEMS product</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_DUACS.html">DUACS – all sat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4DMedSea methods</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_MIOST.html">MIOST</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_4DVarNet.html">4DVarNet</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other methods</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_BFNQG.html">BFN-QG</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
@@ -165,6 +183,11 @@ lon1, lat1 = adv_eul(time0, lon0, lat0, u_velocity_func, v_velocity_func)</p>
 <p># Usage Example:
 lon1, lat1 = adv_rk4(time0, lon0, lat0, u_velocity_func, v_velocity_func)</p>
 </dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mod_traj.check_drifters_distribution">
+<span class="sig-prename descclassname"><span class="pre">mod_traj.</span></span><span class="sig-name descname"><span class="pre">check_drifters_distribution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds_drifters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon_bin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.arange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat_bin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.arange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Global'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mod_traj.check_drifters_distribution" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="mod_traj.compute_deviation">

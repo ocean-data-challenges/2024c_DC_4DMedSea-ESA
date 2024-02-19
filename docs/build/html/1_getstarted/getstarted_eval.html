@@ -4,10 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evaluate your own maps &mdash; 2024c_DC_4DMedSea-ESA  documentation</title>
+  <title>Input specifications &mdash; 2024c_DC_4DMedSea-ESA  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,10 +18,11 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../_static/js/custom.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Overall evaluation" href="../2_eval_generic/eval_overall.html" />
+    <link rel="next" title="Movies" href="../2_eval_generic/overall_movies.html" />
     <link rel="prev" title="Download the data" href="getstarted_data.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
@@ -46,41 +48,43 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">The 4DMedSea project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_projectinfo/projectinfo.html">More information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getstarted_navigate.html">Navigate the GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getstarted_data.html">Download the data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Evaluate your own maps</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#maps-format">Maps format</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Input specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#maps-format">Maps format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#sea-level-anomaly-maps-format">Sea Level Anomaly maps format</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#currents-maps-format">Currents maps format</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#available-metrics-and-where-to-find-them">Available metrics and where to find them</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ssh-evaluation-with-independant-nadir-ssh-data">SSH evaluation with independant nadir SSH data</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#check-example-1">Check example 1</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#currents-evaluation-with-independant-drifter-currents">Currents evaluation with independant drifter currents</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#check-example-2">Check example 2</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#currents-evaluation-with-independant-drifter-trajectories">Currents evaluation with independant drifter trajectories</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#check-example-3">Check example 3</a></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Generic evaluation</span></p>
+<p class="caption" role="heading"><span class="caption-text">Overall comparison</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_overall.html">Overall evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_DUACS.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_movies.html">Movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_scores.html">Scores overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_nadireval.html">Independant nadir evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_driftereval.html">Independant drifter evaluation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CMEMS product</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_DUACS.html">DUACS – all sat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4DMedSea methods</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_MIOST.html">MIOST</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_4DVarNet.html">4DVarNet</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other methods</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_BFNQG.html">BFN-QG</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
@@ -119,7 +123,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Evaluate your own maps</li>
+      <li class="breadcrumb-item active">Input specifications</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/1_getstarted/getstarted_eval.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -129,8 +133,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="evaluate-your-own-maps">
-<h1>Evaluate your own maps<a class="headerlink" href="#evaluate-your-own-maps" title="Permalink to this headline"></a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="input-specifications">
+<h1>Input specifications<a class="headerlink" href="#input-specifications" title="Permalink to this headline"></a></h1>
 <br> 
 <br> 
 <p>Once you have <a class="reference internal" href="getstarted_install.html"><span class="doc std std-doc">installed the data challenge</span></a> and <a class="reference internal" href="getstarted_data.html"><span class="doc std std-doc">downloaded the data</span></a>, you can now evaluate your maps. Although, you might want to check first that your sea level anomaly or sea surface currents maps respect a certain format. You can then scroll through the different metrics, checking the DUACS evaluation notebooks as example.</p>
@@ -144,6 +148,10 @@
 <li><p>for currents evaluation, a meridional and a zonal currents variable <code class="docutils literal notranslate"><span class="pre">ugos</span></code> and <code class="docutils literal notranslate"><span class="pre">vgos</span></code>.</p></li>
 </ul>
 <p>Note that some formatting can be done using xarray within the jupyter notebooks. For instance, you can change a variable’s name simply with <code class="docutils literal notranslate"><span class="pre">ds</span> <span class="pre">=</span> <span class="pre">ds.rename_var({'my_sla':'sla'})</span></code>.</p>
+<br> 
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h2>
 <section id="sea-level-anomaly-maps-format">
 <h3>Sea Level Anomaly maps format<a class="headerlink" href="#sea-level-anomaly-maps-format" title="Permalink to this headline"></a></h3>
 <p><img alt="SLA Format" src="../_images/Maps_format_SLA.png" /></p>
@@ -151,69 +159,7 @@
 <section id="currents-maps-format">
 <h3>Currents maps format<a class="headerlink" href="#currents-maps-format" title="Permalink to this headline"></a></h3>
 <p><img alt="Currents_Format" src="../_images/Maps_format_Currents.png" /></p>
-<br> 
-</section>
-</section>
-<section id="available-metrics-and-where-to-find-them">
-<h2>Available metrics and where to find them<a class="headerlink" href="#available-metrics-and-where-to-find-them" title="Permalink to this headline"></a></h2>
-<section id="ssh-evaluation-with-independant-nadir-ssh-data">
-<h3>SSH evaluation with independant nadir SSH data<a class="headerlink" href="#ssh-evaluation-with-independant-nadir-ssh-data" title="Permalink to this headline"></a></h3>
-<section id="check-example-1">
-<h4><a class="reference external" href="https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/ssh_scores_DUACS_geos.ipynb">Check example 1</a><a class="headerlink" href="#check-example-1" title="Permalink to this headline"></a></h4>
-<ul class="simple">
-<li><p><strong>Grid boxes statistics (maps)</strong></p>
-<ul>
-<li><p><strong>SSH Error variance</strong></p></li>
-<li><p><strong>SSH Explained variance</strong></p></li>
-</ul>
-</li>
-</ul>
-<br> 
-<ul class="simple">
-<li><p><strong>Statistics by regimes (scalar scores)</strong></p></li>
-</ul>
-<br> 
-<ul class="simple">
-<li><p><strong>Spectral effective resolution (maps)</strong></p></li>
-</ul>
-<br> 
-<br> 
-</section>
-</section>
-<section id="currents-evaluation-with-independant-drifter-currents">
-<h3>Currents evaluation with independant drifter currents<a class="headerlink" href="#currents-evaluation-with-independant-drifter-currents" title="Permalink to this headline"></a></h3>
-<section id="check-example-2">
-<h4><a class="reference external" href="https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/uv_scores_DUACS_geos.ipynb">Check example 2</a><a class="headerlink" href="#check-example-2" title="Permalink to this headline"></a></h4>
-<ul class="simple">
-<li><p><strong>Grid boxes statistics (maps)</strong></p>
-<ul>
-<li><p><strong>Currents Error variance</strong></p></li>
-<li><p><strong>Currents Explained variance</strong></p></li>
-</ul>
-</li>
-</ul>
-<br> 
-<ul class="simple">
-<li><p><strong>Statistics by regimes (scalar scores)</strong></p></li>
-</ul>
-<br> 
-<ul class="simple">
-<li><p><strong>Zonaly averaged rotary spectra (omega-latitude plots)</strong></p></li>
-</ul>
-<br> 
-<br> 
-</section>
-</section>
-<section id="currents-evaluation-with-independant-drifter-trajectories">
-<h3>Currents evaluation with independant drifter trajectories<a class="headerlink" href="#currents-evaluation-with-independant-drifter-trajectories" title="Permalink to this headline"></a></h3>
-<section id="check-example-3">
-<h4><a class="reference external" href="https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/uv_scores_DUACS_geos.ipynb">Check example 3</a><a class="headerlink" href="#check-example-3" title="Permalink to this headline"></a></h4>
-<ul class="simple">
-<li><p><strong>Drifter deviation maps at fixed horizons (maps)</strong></p></li>
-<li><p><strong>Drifter deviation global (horizon series)</strong></p></li>
-</ul>
-</section>
-</section>
+<br> </section>
 </section>
 </section>
 
@@ -222,7 +168,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="getstarted_data.html" class="btn btn-neutral float-left" title="Download the data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../2_eval_generic/eval_overall.html" class="btn btn-neutral float-right" title="Overall evaluation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../2_eval_generic/overall_movies.html" class="btn btn-neutral float-right" title="Movies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

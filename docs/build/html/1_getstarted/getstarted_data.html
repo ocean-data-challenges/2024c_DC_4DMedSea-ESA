@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,10 +18,11 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../_static/js/custom.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Evaluate your own maps" href="getstarted_eval.html" />
+    <link rel="next" title="Input specifications" href="getstarted_eval.html" />
     <link rel="prev" title="Navigate the GitHub" href="getstarted_navigate.html" />
     <link href="../_static/style.css" rel="stylesheet" type="text/css">
 
@@ -46,28 +48,44 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Get started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">The 4DMedSea project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_projectinfo/projectinfo.html">More information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Get started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getstarted_navigate.html">Navigate the GitHub</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Download the data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#data-information">Data information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-for-experiment-obs">1) Data for experiment: obs/</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-for-evaluation-eval">2) Data for evaluation: eval/</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-for-comparison">3) Data for comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-for-experiment-obs">1) Data for experiment: <code class="docutils literal notranslate"><span class="pre">obs/</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-for-evaluation-eval">2) Data for evaluation: <code class="docutils literal notranslate"><span class="pre">eval/</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-for-comparison-maps">3) Data for comparison: <code class="docutils literal notranslate"><span class="pre">maps/</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#download-and-read-the-data">Download and read the data</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted_eval.html">Evaluate your own maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getstarted_eval.html">Input specifications</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Generic evaluation</span></p>
+<p class="caption" role="heading"><span class="caption-text">Overall comparison</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_overall.html">Overall evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_DUACS.html">DUACS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_movies.html">Movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_scores.html">Scores overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_nadireval.html">Independant nadir evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/overall_driftereval.html">Independant drifter evaluation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CMEMS product</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_DUACS.html">DUACS – all sat</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4DMedSea methods</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_MIOST.html">MIOST</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_4DVarNet.html">4DVarNet</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other methods</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../2_eval_generic/eval_BFNQG.html">BFN-QG</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
@@ -125,7 +143,7 @@
 <h2>Data information<a class="headerlink" href="#data-information" title="Permalink to this headline"></a></h2>
 <p>The dataset is presented with the following directory structure:</p>
 <section id="data-for-experiment-obs">
-<h3>1) Data for experiment: obs/<a class="headerlink" href="#data-for-experiment-obs" title="Permalink to this headline"></a></h3>
+<h3>1) Data for experiment: <code class="docutils literal notranslate"><span class="pre">obs/</span></code><a class="headerlink" href="#data-for-experiment-obs" title="Permalink to this headline"></a></h3>
 <p><strong>Nadir alongtrack data (L3 products) for SSH map reconstruction</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
 <span class="o">|--</span> <span class="n">obs</span>
@@ -145,7 +163,7 @@
 </div>
 </section>
 <section id="data-for-evaluation-eval">
-<h3>2) Data for evaluation: eval/<a class="headerlink" href="#data-for-evaluation-eval" title="Permalink to this headline"></a></h3>
+<h3>2) Data for evaluation: <code class="docutils literal notranslate"><span class="pre">eval/</span></code><a class="headerlink" href="#data-for-evaluation-eval" title="Permalink to this headline"></a></h3>
 <p><strong>Independant nadir alongtrack data (L3 products) for SSH evaluation</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
 <span class="o">|--</span> <span class="nb">eval</span>
@@ -157,7 +175,8 @@
 <p><strong>Independant drifters for currents evaluation</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
 <span class="o">|--</span> <span class="nb">eval</span>
-<span class="o">|</span>   <span class="o">|--</span> <span class="n">independent_drifters</span> 
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">indep_drifters</span> 
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|--</span> <span class="n">uv_drifters_2017</span><span class="o">*</span>       <span class="o">%</span> <span class="n">CMEMS</span> <span class="o">-</span> <span class="n">Global</span> <span class="n">Ocean</span><span class="o">-</span> <span class="n">Delayed</span> <span class="n">Mode</span> <span class="ow">in</span><span class="o">-</span><span class="n">situ</span> <span class="n">observations</span> <span class="n">of</span> <span class="n">ocean</span> <span class="n">surface</span> <span class="n">currents</span>
 </pre></div>
 </div>
 <p><strong>Auxiliary data for diagnostics</strong></p>
@@ -171,8 +190,8 @@
 </pre></div>
 </div>
 </section>
-<section id="data-for-comparison">
-<h3>3) Data for comparison<a class="headerlink" href="#data-for-comparison" title="Permalink to this headline"></a></h3>
+<section id="data-for-comparison-maps">
+<h3>3) Data for comparison: <code class="docutils literal notranslate"><span class="pre">maps/</span></code><a class="headerlink" href="#data-for-comparison-maps" title="Permalink to this headline"></a></h3>
 <p><strong>Reconstruction maps for comparison</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
 <span class="o">|--</span> <span class="n">maps</span>
@@ -202,7 +221,7 @@ For example, to download and unzip the experiment <code class="docutils literal 
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="getstarted_navigate.html" class="btn btn-neutral float-left" title="Navigate the GitHub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="getstarted_eval.html" class="btn btn-neutral float-right" title="Evaluate your own maps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="getstarted_eval.html" class="btn btn-neutral float-right" title="Input specifications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

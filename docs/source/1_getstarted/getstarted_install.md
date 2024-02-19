@@ -6,11 +6,7 @@
 
 ## _**How to get started ?**_
 
-Clone the data challenge repo: 
-```
-git clone https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA.git
-```
-or using SSH: 
+Clone the data challenge repo:  
 ```
 git clone git@github.com:ocean-data-challenges/2024c_DC_4DMedSea-ESA.git
 ```

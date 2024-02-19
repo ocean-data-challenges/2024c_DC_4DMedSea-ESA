@@ -1,4 +1,4 @@
-# Evaluate your own maps
+# Input specifications
 
 <br> 
  
@@ -19,6 +19,10 @@ The input netcdf files must contain:
 
 Note that some formatting can be done using xarray within the jupyter notebooks. For instance, you can change a variable's name simply with `ds = ds.rename_var({'my_sla':'sla'})`. 
 
+<br> 
+
+## Example
+
 ### Sea Level Anomaly maps format
 
 ![SLA Format](../figures/Maps_format_SLA.png)  
@@ -29,67 +33,3 @@ Note that some formatting can be done using xarray within the jupyter notebooks.
 
  
 <br> 
-
-## Available metrics and where to find them
-
-### SSH evaluation with independant nadir SSH data 
- 
-
-#### [Check example 1](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/ssh_scores_DUACS_geos.ipynb)
- 
-
-- **Grid boxes statistics (maps)** 
-     
-   - **SSH Error variance**      
- 
-   - **SSH Explained variance** 
-
- 
-<br> 
-
-- **Statistics by regimes (scalar scores)**  
- 
- 
-<br> 
-
-- **Spectral effective resolution (maps)**
-  
-
-
-<br> 
-
-
-<br> 
-
-### Currents evaluation with independant drifter currents 
-
-#### [Check example 2](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/uv_scores_DUACS_geos.ipynb)
- 
-- **Grid boxes statistics (maps)**  
-     
-   - **Currents Error variance**      
- 
-   - **Currents Explained variance** 
-
-<br> 
-
-- **Statistics by regimes (scalar scores)** 
-    
-
-<br> 
-
-- **Zonaly averaged rotary spectra (omega-latitude plots)**  
-     
-
-<br> 
-
-
-<br> 
-
-### Currents evaluation with independant drifter trajectories 
-
-#### [Check example 3](https://github.com/ocean-data-challenges/2023a_SSH_mapping_OSE/blob/main/nb_diags_global/uv_scores_DUACS_geos.ipynb) 
-
-- **Drifter deviation maps at fixed horizons (maps)**
-
-- **Drifter deviation global (horizon series)**

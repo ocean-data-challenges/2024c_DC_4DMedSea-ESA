@@ -587,3 +587,55 @@ def plot_meantraj_deviation(dir_out='../results/',just_basin=None,prefix_='devia
     
         
         
+
+
+def check_drifters_distribution(ds_drifters,lon_bin=np.arange(-180, 180, 1),lat_bin=np.arange(-90, 90, 1), region_name='Global'):
+    
+    import pyinterp
+    import cartopy.crs as ccrs
+    from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
+    import matplotlib.ticker as mticker
+    import cmocean
+ 
+
+    binning = pyinterp.Binning2D(pyinterp.Axis(lon_bin, is_circle=True),
+                                     pyinterp.Axis(lat_bin))
+
+    binning = binning.push_delayed(ds_drifters.longitude.values,ds_drifters.latitude.values,np.ones_like(ds_drifters.EWCT.values)).compute()
+
+    drifter_counter = binning.variable('sum')
+
+    n_drifters = np.size(np.unique(ds_drifters.sensor_id) )
+    n_data_drifters = np.sum(~np.isnan(ds_drifters.EWCT.values))
+ 
+
+    plt.figure(figsize=(12,12))
+    ax = plt.subplot(1, 1, 1, projection=ccrs.PlateCarree()) 
+    plt.title('A total of '+str(n_data_drifters)+' data from '+str(n_drifters)+' drifters',fontsize=22)
+
+    lon,lat = np.meshgrid(lon_bin,lat_bin)
+
+
+    im = ax.pcolormesh(lon,lat,drifter_counter.transpose(),cmap='Greens', 
+                       vmax=200,transform=ccrs.PlateCarree()) 
+
+
+    gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,alpha=0.5)
+    gl.xformatter = LONGITUDE_FORMATTER
+    gl.yformatter = LATITUDE_FORMATTER
+    gl.xlabels_top = False
+    gl.ylabels_right = False 
+    gl.xlabel_style = {'size': 20}
+    gl.ylabel_style = {'size': 20}
+    #gl.ylocator = mticker.FixedLocator([-30,-35,-40])
+    ax.coastlines(linewidth=3)
+
+
+    cbar = plt.colorbar(im,ax=ax,extend='max',fraction=0.023, pad=0.04)
+    cbar.ax.set_ylabel('# drifter data',size=20)
+    cbar.ax.tick_params(labelsize=15)  
+    
+    
+    plt.savefig("../figures/drifters_distribution_"+str(region_name)+".png", bbox_inches='tight')
+
+    plt.show()

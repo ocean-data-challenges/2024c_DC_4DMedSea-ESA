@@ -1,5 +1,18 @@
 # Independant drifter evaluation
   
+## Drifter distribution
+
+<details>
+<summary>Drifter maps ⤵️ </summary>  
+
+<br> 
+
+|![drifters_distribution_4DMedSea](../_static/drifters_distribution_4DMedSea.png) |   
+| -- | 
+  
+</details>
+
+<br>
     
 ## Error statistics 
     

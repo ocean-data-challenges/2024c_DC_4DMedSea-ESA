@@ -10,7 +10,7 @@ The data are hosted and can be accessed on the MEOM server opendap [here](https:
 
 The dataset is presented with the following directory structure:
 
-### 1) Data for experiment: obs/
+### 1) Data for experiment: ```obs/```
 
 **Nadir alongtrack data (L3 products) for SSH map reconstruction**
 
@@ -31,7 +31,7 @@ The dataset is presented with the following directory structure:
 |   |   |-- dt_europe_s3a_phy_l3_2017* 
 ``` 
 
-### 2) Data for evaluation: eval/
+### 2) Data for evaluation: ```eval/```
 
 **Independant nadir alongtrack data (L3 products) for SSH evaluation**
 
@@ -48,7 +48,8 @@ The dataset is presented with the following directory structure:
 ```
 .
 |-- eval
-|   |-- independent_drifters 
+|   |-- indep_drifters 
+|   |   |-- uv_drifters_2017*       % CMEMS - Global Ocean- Delayed Mode in-situ observations of ocean surface currents
 ```
 
 **Auxiliary data for diagnostics**
@@ -63,7 +64,7 @@ The dataset is presented with the following directory structure:
 
 ```
 
-### 3) Data for comparison
+### 3) Data for comparison: ```maps/```
 
 **Reconstruction maps for comparison**
 
