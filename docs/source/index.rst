@@ -92,7 +92,7 @@ Scoreboard
           </thead>
           <tbody>  
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">MIOST</a></strong></td>
+              <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_MIOST.html">MIOST</a></strong></td>
               <td>4.6 cm</td>
               <td>55 % </td>
               <td>121.3 km</td>
@@ -102,7 +102,7 @@ Scoreboard
               <td>29 %</td> 
             </tr>
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_miost.html">4DVarNet</a></strong></td>
+              <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_4DVarNet.html">4DVarNet</a></strong></td>
               <td>4.5 cm</td>
               <td>56 %</td>
               <td>144.1 km </td>
@@ -135,7 +135,7 @@ Scoreboard
           </thead>
           <tbody>  
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></strong></td>
+              <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_DUACS.html">DUACS</a></strong></td>
               <td>4.1 cm</td>
               <td>63 %</td>
               <td>103.0 km</td>
@@ -168,7 +168,7 @@ Scoreboard
           </thead>
           <tbody>  
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">BFN-QG</a></strong></td>
+              <td><strong> BFN-QG </strong></td>
               <td> cm</td>
               <td> %</td>
               <td> km</td>
@@ -180,6 +180,10 @@ Scoreboard
           </tbody>
         </table>
         
+
+        </br>
+        
+        <h4>You can check the overall comparison for more details or click on the methods name to see their specific performances.  </h4>   
         
         </br>
     
