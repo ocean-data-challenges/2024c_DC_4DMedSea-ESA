@@ -29,7 +29,7 @@ In that context, the overarching objectives of the 4DMED ITT are to exploit the 
 
 
 <p align="center">
-  <img src="docs/source/_static/DC_4DMedSea_IllustrationMap.png" alt="Alt Text" width="600"/>
+  <a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/"><img src="docs/source/_static/DC_4DMedSea_IllustrationMap.png" alt="Alt Text" width="600"/><a>
 </p>
   
  
