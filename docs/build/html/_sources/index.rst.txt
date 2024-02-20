@@ -35,7 +35,7 @@ The 4DMedSea Data Challenge
 ===========================
 
 
-The 4DMedSea data challenge is a comparison platform that allow a sound and fair assessment of several mapping methods between in the West Mediterranean region. This platform offers an input dataset (altimetric data), for anyone to create sea level and surface current maps, as well as a reference dataset (independant from the input dataset) in order to evaluate the methods. The data challenge is hosted in a `github repository <https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA>`_ and its documentation and results are presented on this readthedocs website. 
+The 4DMedSea data challenge is a comparison platform that allows a sound and fair assessment of several mapping methods in the West Mediterranean region. This platform contains an input dataset (altimetric data), for anyone to create sea level and surface current maps, as well as a reference dataset (observations independant from the input dataset) in order to evaluate the methods. The data challenge is hosted in a `github repository <https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA>`_ and its documentation and results are presented on this readthedocs website. 
 
         
 
@@ -92,7 +92,7 @@ Scoreboard
           </thead>
           <tbody>  
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">MIOST</a></strong></td>
+              <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_MIOST.html">MIOST</a></strong></td>
               <td>4.6 cm</td>
               <td>55 % </td>
               <td>121.3 km</td>
@@ -102,7 +102,7 @@ Scoreboard
               <td>29 %</td> 
             </tr>
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_miost.html">4DVarNet</a></strong></td>
+              <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_4DVarNet.html">4DVarNet</a></strong></td>
               <td>4.5 cm</td>
               <td>56 %</td>
               <td>144.1 km </td>
@@ -130,12 +130,12 @@ Scoreboard
               <th>RMSE(u)</th>
               <th>RMSE score(u)</th>
               <th>RMSE(v)</th>
-              <th>RMSE score(v)</th>
+              <th>RMSE score(v)</th> 
             </tr>
           </thead>
           <tbody>  
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">DUACS</a></strong></td>
+              <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_DUACS.html">DUACS</a></strong></td>
               <td>4.1 cm</td>
               <td>63 %</td>
               <td>103.0 km</td>
@@ -168,7 +168,7 @@ Scoreboard
           </thead>
           <tbody>  
             <tr> 
-              <td><strong><a href="https://2024-dc-woc-esa.readthedocs.io/en/latest/3_dc_gulfstream/dc_gulfstream_duacs.html">BFN-QG</a></strong></td>
+              <td><strong> BFN-QG </strong></td>
               <td> cm</td>
               <td> %</td>
               <td> km</td>
@@ -180,6 +180,10 @@ Scoreboard
           </tbody>
         </table>
         
+
+        </br>
+        
+        <h4>You can check the overall comparison for more details or click on the methods name to see their specific performances.  </h4>   
         
         </br>
     
