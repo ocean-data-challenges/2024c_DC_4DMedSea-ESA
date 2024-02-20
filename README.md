@@ -25,7 +25,7 @@ In that context, the overarching objectives of the 4DMED ITT are to exploit the 
 # 2. 4DMedSea Data Challenges
  
 
-**For more info on the objectives, the experimental setup and the results of the WOC data challenges: [Check out the 4DMedSea data challenges website !](https://2024c-dc-4dmedsea-esa.readthedocs.io/)**
+**For more info on the objectives, the experimental setup and the results of the 4DMedSea data challenges: [Check out the 4DMedSea data challenges website !](https://2024c-dc-4dmedsea-esa.readthedocs.io/)**
 
 
 <p align="center">
