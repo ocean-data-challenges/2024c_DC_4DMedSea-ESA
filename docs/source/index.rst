@@ -35,7 +35,7 @@ The 4DMedSea Data Challenge
 ===========================
 
 
-The 4DMedSea data challenge is a comparison platform that allow a sound and fair assessment of several mapping methods between in the West Mediterranean region. This platform offers an input dataset (altimetric data), for anyone to create sea level and surface current maps, as well as a reference dataset (independant from the input dataset) in order to evaluate the methods. The data challenge is hosted in a `github repository <https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA>`_ and its documentation and results are presented on this readthedocs website. 
+The 4DMedSea data challenge is a comparison platform that allows a sound and fair assessment of several mapping methods in the West Mediterranean region. This platform contains an input dataset (altimetric data), for anyone to create sea level and surface current maps, as well as a reference dataset (observations independant from the input dataset) in order to evaluate the methods. The data challenge is hosted in a `github repository <https://github.com/ocean-data-challenges/2024c_DC_4DMedSea-ESA>`_ and its documentation and results are presented on this readthedocs website. 
 
         
 
