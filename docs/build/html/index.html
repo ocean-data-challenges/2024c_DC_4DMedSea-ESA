@@ -58,25 +58,21 @@
 <li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_data.html">Download the data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_getstarted/getstarted_eval.html">Input specifications</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Overall comparison</span></p>
+<p class="caption" role="heading"><span class="caption-text">Experiment 2017</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="2_eval_generic/overall_movies.html">Movies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_eval_generic/overall_scores.html">Scores overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_eval_generic/overall_nadireval.html">Independant nadir evaluation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_eval_generic/overall_driftereval.html">Independant drifter evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_eval_generic/overall_trajeval.html">Independant trajectory evaluation</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">CMEMS product</span></p>
+<p class="caption" role="heading"><span class="caption-text">Experiment 2016-2017</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="2_eval_generic/eval_DUACS.html">DUACS – all sat</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">4DMedSea methods</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2_eval_generic/eval_MIOST.html">MIOST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_eval_generic/eval_4DVarNet.html">4DVarNet</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Other methods</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2_eval_generic/eval_BFNQG.html">BFN-QG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_eval_exp20162017/overall_movies.html">Movies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_eval_exp20162017/overall_scores.html">Scores overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_eval_exp20162017/overall_nadireval.html">Independant nadir evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_eval_exp20162017/overall_driftereval.html">Independant drifter evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_eval_exp20162017/overall_trajeval.html">Independant trajectory evaluation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Metrics details</span></p>
 <ul>
@@ -154,117 +150,320 @@ The input observations used to generate the maps are conventional altimeters (Sa
 </section>
 <section id="scoreboard">
 <h2>Scoreboard<a class="headerlink" href="#scoreboard" title="Permalink to this headline"></a></h2>
-<h3> 4DMedSea methods </h3>
+</br>
 
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>RMSE(SLA)</th>
-        <th>RMSE score(SLA)</th>
-        <th>Eff. res.(SLA)</th>
-        <th>RMSE(u)</th>
-        <th>RMSE score(u)</th>
-        <th>RMSE(v)</th>
-        <th>RMSE score(v)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_MIOST.html">MIOST</a></strong></td>
-        <td>4.6 cm</td>
-        <td>55 % </td>
-        <td>121.3 km</td>
-        <td>12.8 cm/s</td>
-        <td>31 %</td>
-        <td>12.7 cm/s</td>
-        <td>29 %</td>
-      </tr>
-      <tr>
-        <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_4DVarNet.html">4DVarNet</a></strong></td>
-        <td>4.5 cm</td>
-        <td>56 %</td>
-        <td>144.1 km </td>
-        <td>13.2 cm/s</td>
-        <td>30 %</td>
-        <td>13.5 cm/s</td>
-        <td>25 %</td>
-      </tr>
-    </tbody>
-  </table>
+<h4>You can check the overall comparison for more details or click on the methods name to see their specific performances.  </h4>
 
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Alongtrackscores')" id="defaultOpen"><b>Along track scores</b></button>
+  <button class="tablinks" onclick="openCity(event, 'Alongdrifterscores')"><b>Along drifter scores</b></button>
+  <button class="tablinks" onclick="openCity(event, 'Driftertrajectorydeviation')"><b>Drifter trajectory deviation</b></button>
+</div>
 
-  </br>
+<div id="Alongtrackscores" class="tabcontent">
+  <br />
+  <h3> Statistical and spectral scores </h3>
 
+  <h4><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_alongtrack.html">[Alongtrack metrics details]</a> </h4>
 
-<h3> DUACS-CMEMS product (using all sat) </h3>
+    </br>
 
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>RMSE(SLA)</th>
-        <th>RMSE score(SLA)</th>
-        <th>Eff. res.(SLA)</th>
-        <th>RMSE(u)</th>
-        <th>RMSE score(u)</th>
-        <th>RMSE(v)</th>
-        <th>RMSE score(v)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_DUACS.html">DUACS</a></strong></td>
-        <td>4.1 cm</td>
-        <td>63 %</td>
-        <td>103.0 km</td>
-        <td>12.1 cm/s</td>
-        <td>35 %</td>
-        <td>12.5 cm/s</td>
-        <td>31 %</td>
-      </tr>
-    </tbody>
-  </table>
+    <h4> 4DMedSea methods </h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>RMSE(SLA)</th>
+          <th>RMSE score(SLA)</th>
+          <th>Eff. res.(SLA)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_MIOST.html">MIOST</a></strong></td>
+          <td>4.6 cm</td>
+          <td>55 % </td>
+          <td>121.3 km</td>
+        </tr>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_4DVarNet.html">4DVarNet</a></strong></td>
+          <td>4.5 cm</td>
+          <td>56 %</td>
+          <td>144.1 km </td>
+        </tr>
+      </tbody>
+    </table>
+
+    </br>
 
 
-  </br>
+  <h4> DUACS-CMEMS product (using all sat) </h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>RMSE(SLA)</th>
+          <th>RMSE score(SLA)</th>
+          <th>Eff. res.(SLA)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_DUACS.html">DUACS</a></strong></td>
+          <td>4.1 cm</td>
+          <td>63 %</td>
+          <td>103.0 km</td>
+        </tr>
+      </tbody>
+    </table>
+
+    </br>
 
 
-<h3> Other methods </h3>
+  <h4> Other methods </h4>
 
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>RMSE(SLA)</th>
-        <th>RMSE score(SLA)</th>
-        <th>Eff. res.(SLA)</th>
-        <th>RMSE(u)</th>
-        <th>RMSE score(u)</th>
-        <th>RMSE(v)</th>
-        <th>RMSE score(v)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong> BFN-QG </strong></td>
-        <td> cm</td>
-        <td> %</td>
-        <td> km</td>
-        <td>  cm/s</td>
-        <td> %</td>
-        <td> cm/s</td>
-        <td> %</td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>RMSE(SLA)</th>
+          <th>RMSE score(SLA)</th>
+          <th>Eff. res.(SLA)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong> --- </strong></td>
+          <td> cm</td>
+          <td> %</td>
+          <td> km</td>
+        </tr>
+      </tbody>
+    </table>
 
 
-  </br>
+    </br>
 
-  <h4>You can check the overall comparison for more details or click on the methods name to see their specific performances.  </h4>
+</div>
 
-  </br><p><span class="raw-html"><br /></span></p>
+<div id="Alongdrifterscores" class="tabcontent">
+  <br />
+  <h3> Statistical scores </h3>
+
+  <h4><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_alongdrifter.html">[Along drifter metrics details]</a>  </h4>
+
+    </br>
+
+    <h4> 4DMedSea methods </h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>RMSE(u)</th>
+          <th>RMSE score(u)</th>
+          <th>RMSE(v)</th>
+          <th>RMSE score(v)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_MIOST.html">MIOST</a></strong></td>
+          <td>12.8 cm/s</td>
+          <td>31 %</td>
+          <td>12.7 cm/s</td>
+          <td>29 %</td>
+        </tr>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_4DVarNet.html">4DVarNet</a></strong></td>
+          <td>13.2 cm/s</td>
+          <td>30 %</td>
+          <td>13.5 cm/s</td>
+          <td>25 %</td>
+        </tr>
+      </tbody>
+    </table>
+
+    </br>
+
+
+  <h4> DUACS-CMEMS product (using all sat) </h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>RMSE(u)</th>
+          <th>RMSE score(u)</th>
+          <th>RMSE(v)</th>
+          <th>RMSE score(v)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_DUACS.html">DUACS</a></strong></td>
+          <td>12.1 cm/s</td>
+          <td>35 %</td>
+          <td>12.5 cm/s</td>
+          <td>31 %</td>
+        </tr>
+      </tbody>
+    </table>
+
+    </br>
+
+
+  <h4> Other methods </h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>RMSE(u)</th>
+          <th>RMSE score(u)</th>
+          <th>RMSE(v)</th>
+          <th>RMSE score(v)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong> --- </strong></td>
+          <td>  cm/s</td>
+          <td> %</td>
+          <td> cm/s</td>
+          <td> %</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    </br>
+
+</div>
+
+<div id="Driftertrajectorydeviation" class="tabcontent">
+
+    <br />
+    <h3> Averaged trajectory deviation</h3>
+    <h4><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/5_metrics_det/metrics_driftertraj.html">[Drifter trajectory metrics details]</a> </h4>
+    </br>
+
+    <h4> 4DMedSea methods </h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>horizon 1d</th>
+          <th>horizon 2d</th>
+          <th>horizon 3d</th>
+          <th>horizon 4d</th>
+          <th>horizon 5d</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_MIOST.html">MIOST</a></strong></td>
+          <td>14.9 km</td>
+          <td>26.9 km </td>
+          <td>39.3 km</td>
+          <td>50.2 km</td>
+          <td>59.4 km </td>
+        </tr>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_4DVarNet.html">4DVarNet</a></strong></td>
+          <td>15.1 km</td>
+          <td>27.3 km </td>
+          <td>39.2 km</td>
+          <td>49.8 km</td>
+          <td>59.4 km </td>
+        </tr>
+      </tbody>
+    </table>
+
+    </br>
+
+  <h4> DUACS-CMEMS product (using all sat) </h4>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>horizon 1d</th>
+          <th>horizon 2d</th>
+          <th>horizon 3d</th>
+          <th>horizon 4d</th>
+          <th>horizon 5d</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong><a href="https://2024c-dc-4dmedsea-esa.readthedocs.io/en/latest/2_eval_generic/eval_DUACS.html">DUACS</a></strong></td>
+          <td>13.9 km</td>
+          <td>25.6 km </td>
+          <td>36.0 km</td>
+          <td>46.0 km</td>
+          <td>54.0 km </td>
+        </tr>
+      </tbody>
+    </table>
+    </br>
+
+  <h4> Other methods </h4>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>horizon 1d</th>
+          <th>horizon 2d</th>
+          <th>horizon 3d</th>
+          <th>horizon 4d</th>
+          <th>horizon 5d</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong> --- </strong></td>
+          <td> km</td>
+          <td> km </td>
+          <td> km</td>
+          <td> km</td>
+          <td> km </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+    </br>
+
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<br /><p><span class="raw-html"><br /></span></p>
 <p><span class="raw-html"><hr /></span></p>
 <p><span class="raw-html"><br /></span></p>
 </section>
@@ -311,10 +510,6 @@ The input observations used to generate the maps are conventional altimeters (Sa
 </ul>
 <hr class="docutils" />
 <p><span class="raw-html"><br /></span></p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">

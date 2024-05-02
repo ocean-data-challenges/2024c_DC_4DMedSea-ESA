@@ -1495,9 +1495,9 @@ def compare_stat_score_map_png(study_filename=None, ref_filename=None, output_di
         
         
         if var_type == 'sla': 
-            list_file = sorted(glob(f'{output_dir}/stat_sla*.nc')) 
+            list_file = sorted(glob(f'{output_dir}/stat*_sla*.nc')) 
         if var_type == 'uv':
-            list_file = sorted(glob(f'{output_dir}/stat_uv*.nc'))
+            list_file = sorted(glob(f'{output_dir}/stat*_uv*.nc'))
         
         i = 0
         for file1 in list_file:
@@ -2132,9 +2132,9 @@ def compare_psd_score_png(study_filename=None, ref_filename=None, output_dir='..
         
         
         if var_type == 'sla': 
-            list_file = sorted(glob(f'{output_dir}/psd_sla*.nc')) 
+            list_file = sorted(glob(f'{output_dir}/psd_*sla*.nc')) 
         if var_type == 'uv':
-            list_file = sorted(glob(f'{output_dir}/psd_uv*.nc'))
+            list_file = sorted(glob(f'{output_dir}/psd_*uv*.nc'))
         
         i = 0
         for file1 in list_file:
@@ -2322,14 +2322,14 @@ def movie(ds, name_var, method='DUACS', region='Global', dir_output='../results/
         return Video(os.path.join(dir_output, moviename),embed=True)
 
     
-def plot_temporal_rmse(rmse_filename=None, output_dir='../results/', var_type='sla'): 
+def plot_temporal_rmse(rmse_filename=None, output_dir='../results/', var_type='sla', linestyle = None): 
     from glob import glob
 
     if rmse_filename == None: 
         if var_type == 'sla':
-            list_rmse = sorted(glob(f'{output_dir}/rmse_sla*.nc')) 
+            list_rmse = sorted(glob(f'{output_dir}/rmse*_sla*.nc')) 
         if var_type == 'uv':
-            list_rmse = sorted(glob(f'{output_dir}/rmse_uv*.nc'))
+            list_rmse = sorted(glob(f'{output_dir}/rmse*_uv*.nc'))
         
         
         fig, ax1 = plt.subplots(figsize=(12,5)) 
@@ -2339,16 +2339,22 @@ def plot_temporal_rmse(rmse_filename=None, output_dir='../results/', var_type='s
         if var_type == 'uv':
             ax1.set_ylabel('Currents RMSE (m/s)',fontsize=13)
             plt.ylim(0,0.4)
+        i = 0
         for rmse_filename in list_rmse:
             ds_1 = xr.open_dataset(rmse_filename)
-            ax1.plot(ds_1.days,ds_1.rmse, label=ds_1.attrs['method'])
+            if linestyle is not None:  
+                ax1.plot(ds_1.days,ds_1.rmse, linestyle[i], label=ds_1.attrs['method'])
+            else:
+                ax1.plot(ds_1.days,ds_1.rmse, label=ds_1.attrs['method'])
+            i+=1
+                
         ax1.tick_params(axis='y')
         plt.legend(fontsize=13)  
         plt.yticks(fontsize=13)
         plt.grid() 
         fig.tight_layout()  # otherwise the right y-label is slightly clipped
         if var_type == 'sla':
-            fig.savefig("../figures/temporal_rmse_sla_comparison.png", bbox_inches='tight')
+            fig.savefig("../figures/temporal_rmse_sla_comparison.png", bbox_inches='tight') 
         if var_type == 'uv':
             fig.savefig("../figures/temporal_rmse_uv_comparison.png", bbox_inches='tight')
         
@@ -2381,7 +2387,7 @@ def plot_average_psd(psd_output_filename=None, output_dir='../results/'):
     from glob import glob
 
     if psd_output_filename == None: 
-        list_psd = sorted(glob(f'{output_dir}/psd_sla*.nc'))  
+        list_psd = sorted(glob(f'{output_dir}/psd_*sla*.nc'))  
         
         fig, ax1 = plt.subplots(figsize=(6,5))  
         for psd_output_filename in list_psd:
@@ -2522,7 +2528,7 @@ def movie_intercomp(ds_maps_list, methods=['DUACS'], name_var='uv', dir_output='
                 ax0.set_title(methods[i_met])
                 
                 ax0.coastlines(resolution='10m', lw=0.5, zorder=13)
-                ax0.add_feature(cfeature.LAND, color='w', zorder=12)
+                ax0.add_feature(cfeature.LAND, color='grey', zorder=12)
                 gl = ax0.axes.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                                       linewidth=0.1, color='black', alpha=0.5, linestyle='--')
                 gl.top_labels = False

@@ -1,7 +1,7 @@
 # Scores overview 
     
     
-## Independant nadir scores  
+## Independent nadir scores  
 
 <br> 
 
@@ -21,7 +21,7 @@
  
 <br>
 
-## Independant drifter scores  
+## Independent drifter scores  
     
 <br> 
 
@@ -41,3 +41,21 @@
 
 <br>
  
+ 
+## Independent drifter trajectory scores 
+
+
+
+- **CMEMS product**
+
+|               | horizon 1d | horizon 2d | horizon 3d | horizon 4d |  horizon 5d |  
+|---------------|--------|--------------|--------|--------------|--------------|
+|**DUACS (all sat)**| 13.9 km  | 25.6 km    | 36.0 km | 46.0 km    |  54.0 km  |
+
+- **4DMedSea methods**
+
+|               | horizon 1d | horizon 2d | horizon 3d | horizon 4d |  horizon 5d |  
+|---------------|--------|--------------|--------|--------------|-------------| 
+|**MIOST**          | 14.9 km  | 26.9 km    | 39.3 km | 50.2 km    |  59.4 km  |
+|**4DVarNet**          | 15.1 km  | 27.3 km    | 39.2 km | 49.8 km    |  59.4 km  |
+           
