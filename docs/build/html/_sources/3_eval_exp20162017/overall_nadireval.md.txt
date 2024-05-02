@@ -9,6 +9,18 @@
 <br>
  
    
+   
+- **MIOST**
+
+|![temporal_rmse_comparison](../_static/exp_20162017/Maps_miost_errvar_4DMedSea.png) |  
+| -- | 
+   
+   
+- **4DVarNet**
+
+|![temporal_rmse_comparison](../_static/exp_20162017/Maps_4DVarNet_V2_errvar_4DMedSea.png) |  
+| -- | 
+   
 - **MIOST vs 4DVarNet**
 
 |![temporal_rmse_comparison](../_static/exp_20162017/Maps_MIOSTvs4DVarNet_V2_errvar_sla_4DMedSea.png) |  
@@ -23,6 +35,18 @@
 
 <br> 
    
+   
+- **MIOST**
+
+|![temporal_rmse_comparison](../_static/exp_20162017/Maps_miost_explvar_4DMedSea.png) |  
+| -- | 
+   
+   
+- **4DVarNet**
+
+|![temporal_rmse_comparison](../_static/exp_20162017/Maps_4DVarNet_V2_explvar_4DMedSea.png) |  
+| -- | 
+
 - **MIOST vs 4DVarNet**
 
 |  ![temporal_rmse_comparison](../_static/exp_20162017/Maps_MIOSTvs4DVarNet_V2_explvar_sla_4DMedSea.png)|

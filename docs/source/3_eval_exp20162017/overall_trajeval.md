@@ -21,7 +21,7 @@
 <summary>Distance maps ⤵️ </summary>  
 
 | ![MIOST LDC h1](../_static/exp_20162017/deviation_maps_MIOST_h1.png) | ![4DVarNet LDC h1](../_static/exp_20162017/deviation_maps_4DVarNet_V2_h1.png) |
-|--|--|--|
+|--|--|
 |  ![MIOST LDC h1](../_static/exp_20162017/deviation_maps_MIOST_h2.png) | ![4DVarNet LDC h1](../_static/exp_20162017/deviation_maps_4DVarNet_V2_h2.png) |
 |  ![MIOST LDC h1](../_static/exp_20162017/deviation_maps_MIOST_h3.png) | ![4DVarNet LDC h1](../_static/exp_20162017/deviation_maps_4DVarNet_V2_h3.png) |
 |  ![MIOST LDC h1](../_static/exp_20162017/deviation_maps_MIOST_h4.png) | ![4DVarNet LDC h1](../_static/exp_20162017/deviation_maps_4DVarNet_V2_h4.png) |
